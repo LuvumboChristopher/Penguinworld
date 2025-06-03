@@ -135,7 +135,7 @@ export function Footer() {
                   href="#"
                   className="text-muted-foreground hover:text-[#feb516] text-sm"
                 >
-                  Conditions d'utilisation
+                  Conditions d&apos;utilisation
                 </Link>
               </li>
               <li>
@@ -192,7 +192,7 @@ export function Footer() {
                   href="#"
                   className="text-muted-foreground hover:text-[#feb516] text-sm"
                 >
-                  Centre d'aide
+                  Centre d&apos;aide
                 </Link>
               </li>
               <li>

@@ -8,17 +8,17 @@ const blocks = [
   {
     title: "Une vision à 360° du secteur",
     content:
-      "En tant qu’entrepreneur actif, je vous apporte une vision actuelle et à 360° du marché du tourisme. Mon objectif est de faire évoluer le secteur avec pragmatisme et modernité.",
+      "En tant qu&apos;entrepreneur actif, je vous apporte une vision actuelle et à 360° du marché du tourisme. Mon objectif est de faire évoluer le secteur avec pragmatisme et modernité.",
   },
   {
     title: "L'engagement terrain",
     content:
-      "Je suis engagé au quotidien auprès des professionnels du voyage. En tant que membre du Comité des adhésions de l’APST et délégué régional, j’accompagne les futurs acteurs du tourisme avec énergie et réalisme.",
+      "Je suis engagé au quotidien auprès des professionnels du voyage. En tant que membre du Comité des adhésions de l&apos;APST et délégué régional, j&apos;accompagne les futurs acteurs du tourisme avec énergie et réalisme.",
   },
   {
     title: "Une passion pour l'entrepreneuriat",
     content:
-      "Je suis un entrepreneur passionné. J’aime aller au bout des dossiers, les traiter avec rigueur et humanité. Mon approche repose sur l’écoute et l’efficacité.",
+      "Je suis un entrepreneur passionné. J&apos;aime aller au bout des dossiers, les traiter avec rigueur et humanité. Mon approche repose sur l&apos;écoute et l&apos;efficacité.",
   },
 ];
 
@@ -100,7 +100,7 @@ export function ContentSection() {
               />
               <p className="text-muted-foreground text-center md:text-left text-sm lg:text-base xl:text-md">
                 Je suis Raphaël Torro, Président de VLC Travel et fondateur de la plateforme Resaneo. Depuis plusieurs années,
-                je m’investis dans la transformation du secteur du tourisme. Comprendre finement le marché, innover et accompagner
+                je m&apos;investis dans la transformation du secteur du tourisme. Comprendre finement le marché, innover et accompagner
                 les professionnels du voyage : voilà ce qui guide chacune de mes actions.
               </p>
             </div>
@@ -108,7 +108,7 @@ export function ContentSection() {
               <blockquote className="border-l-8 pl-4 italic text-sm text-muted-foreground">
                 <strong className="text-black">Le Progrès</strong> : "Grâce à Resaneo, sa plateforme de réservations de vols pour
                 les agences de voyages, Raphaël Torro est cette année en tête de notre palmarès des jeunes patrons du Rhône par
-                chiffre d’&apos;affaires."
+                chiffre d&apos;affaires."
               </blockquote>
             </div>
           </motion.div>

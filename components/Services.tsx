@@ -35,7 +35,7 @@ const solutions = [
     title: "Bourse des Vols",
     icon: null,
     image: "/images/bdv-vols-placeholder.jpg",
-    description: `La Bourse des Vols est un comparateur performant qui aide les utilisateurs à trouver rapidement les meilleures offres sur le marché. Son interface claire et ergonomique facilite la recherche, le tri et la réservation de billets d’avion à prix compétitifs, tout en intégrant des options avancées comme les alertes de prix et les filtres personnalisés.`,
+    description: `La Bourse des Vols est un comparateur performant qui aide les utilisateurs à trouver rapidement les meilleures offres sur le marché. Son interface claire et ergonomique facilite la recherche, le tri et la réservation de billets d&apos;avion à prix compétitifs, tout en intégrant des options avancées comme les alertes de prix et les filtres personnalisés.`,
     infoUrl: "#",
     siteUrl: "https://www.bourse-des-vols.com",
   },
@@ -77,7 +77,7 @@ const detectActiveItem = () => {
   const container = scrollRef.current;
   if (!container || !itemRefs.current.length) return;
 
-  const isSmallScreen = window.innerWidth < 640; // breakpoint sm
+  const isSmallScreen = window.innerWidth < 640;
 
   if (isSmallScreen) {
     const containerCenter = container.scrollLeft + container.clientWidth / 2;
@@ -102,7 +102,6 @@ const detectActiveItem = () => {
     const scrollLeft = container.scrollLeft;
     let firstVisibleIndex = 0;
 
-    // Usamos un for normal para poder romper el bucle al encontrar el primer visible
     for (let i = 0; i < itemRefs.current.length; i++) {
       const item = itemRefs.current[i];
       if (item) {
@@ -194,7 +193,7 @@ const detectActiveItem = () => {
             pour révolutionner le secteur du tourisme. Chacune est conçue pour
             offrir une expérience utilisateur exceptionnelle, tout en répondant
             aux besoins spécifiques des professionnels et voyageurs. Explorez
-            les fonctionnalités avancées, l'&apos;ergonomie optimisée et la robustesse
+            les fonctionnalités avancées, l&apos;ergonomie optimisée et la robustesse
             technique qui caractérisent chacune de nos solutions.
           </motion.p>
         </div>

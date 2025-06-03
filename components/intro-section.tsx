@@ -29,7 +29,7 @@ export function IntroSection() {
 
           <div className="space-y-3 text-justify text-muted-foreground text-base lg:text-lg">
             <p>
-              Le groupe PenguinWorld et sa large palette de services mise à disposition des professionnels et des voyageurs, se situe au cœur de cette réalité, nous en avons fait notre ADN, notre mission première, et celle de toutes nos équipes d'&apos;experts disponibles et passionnés qui contribuent à diffuser ce souffle de concorde et paix à travers le monde.
+              Le groupe PenguinWorld et sa large palette de services mise à disposition des professionnels et des voyageurs, se situe au cœur de cette réalité, nous en avons fait notre ADN, notre mission première, et celle de toutes nos équipes d&apos;experts disponibles et passionnés qui contribuent à diffuser ce souffle de concorde et paix à travers le monde.
             </p>
             <p>
               Un voyage réussi est celui où toute la chaine humaine a été au rendez-vous, et qui aura permis au voyageur de gagner les espaces de liberté et de découverte auxquels il aspire.
@@ -52,7 +52,7 @@ export function IntroSection() {
             className="flex items-center gap-6 max-w-xl mr-auto"
           >
             <blockquote className="italic text-base lg:text-lg text-gray-700 leading-relaxed relative pl-6 before:absolute before:left-0 before:top-0 before:text-6xl before:text-gray-300 before:content-['“'] before:-translate-y-2">
-              Le plus beau voyage, c&apos;est celui qu&apos;on n’a pas encore fait.<br />— Loïck Peyron
+              Le plus beau voyage, c&apos;est celui qu&apos;on n&apos;a pas encore fait.<br />— Loïck Peyron
             </blockquote>
           </motion.div>
         </motion.div>

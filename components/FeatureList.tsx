@@ -6,17 +6,17 @@ export function FeatureList() {
     {
       title: "1. Innovation responsable",
       description:
-        "Chez Pinguen World, l’innovation ne se fait jamais au détriment de l’humain. Chaque solution pensée est durable, éthique et utile, pour bâtir un avenir numérique plus sain.",
+        "Chez Pinguen World, l&apos;innovation ne se fait jamais au détriment de l&apos;humain. Chaque solution pensée est durable, éthique et utile, pour bâtir un avenir numérique plus sain.",
     },
     {
       title: "2. Engagement collectif",
       description:
-        "Nos entreprises partagent un ADN commun : la collaboration d’abord. Ensemble, nous co-construisons des services qui répondent aux besoins réels de nos clients et de la société.",
+        "Nos entreprises partagent un ADN commun : la collaboration d&apos;abord. Ensemble, nous co-construisons des services qui répondent aux besoins réels de nos clients et de la société.",
     },
     {
       title: "3. Excellence et simplicité",
       description:
-        "Nous visons l’excellence, sans complexité inutile. Notre priorité : livrer des produits performants, accessibles et élégants, portés par une exigence de qualité constante.",
+        "Nous visons l&apos;excellence, sans complexité inutile. Notre priorité : livrer des produits performants, accessibles et élégants, portés par une exigence de qualité constante.",
     },
   ];
 
