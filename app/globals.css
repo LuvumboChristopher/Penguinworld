@@ -2,26 +2,105 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+@font-face {
+  font-family: 'Lexend';
+  src: url('/fonts/Lexend-Light.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: 'LexendBold';
+  src: url('/fonts/Lexend-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+html {
+  scroll-behavior: smooth;
 }
+
+.container {
+  max-width: 1440px;
+  width: 90%;
+  margin: auto;
+}
+
+
+p, small, h3 {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 400; 
+  letter-spacing: -1px;
+
+}
+
+h1, h2, h4, h5, h6 {
+  font-family: 'LexendBold', sans-serif;
+  font-weight: 700;
+  letter-spacing: -1px;
+
+}
+
+.outlined-text {
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+  letter-spacing: -1px;
+}
+
+.outlined-text-black {
+  color: transparent;
+  -webkit-text-stroke: 1.25px black;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;  
+  scrollbar-width: none; 
+}
+
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+
+@layer base {
+    html {
+    font-size: 100%;
+  }
+
+  @media (max-width: 639px) {
+    html {
+      font-size: 97.75%; 
+    }
+  }
+  ::-webkit-scrollbar {
+    width: 12px;
+    background-color: #1a1a1a;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #7d7d7d;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #dcdcdc;
+  }
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #7d7d7d #1a1a1a;
+  }
+}
+
+.clip-diagonal-video {
+  clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
 }
