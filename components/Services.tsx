@@ -194,7 +194,7 @@ const detectActiveItem = () => {
             pour révolutionner le secteur du tourisme. Chacune est conçue pour
             offrir une expérience utilisateur exceptionnelle, tout en répondant
             aux besoins spécifiques des professionnels et voyageurs. Explorez
-            les fonctionnalités avancées, l'ergonomie optimisée et la robustesse
+            les fonctionnalités avancées, l'&apos;ergonomie optimisée et la robustesse
             technique qui caractérisent chacune de nos solutions.
           </motion.p>
         </div>

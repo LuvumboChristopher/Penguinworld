@@ -1,6 +1,6 @@
 "use client"
 
-import { Mail, MapPin, Facebook, Instagram, Linkedin } from "lucide-react"
+import { MapPin, Facebook, Instagram, Linkedin } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
 

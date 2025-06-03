@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const blocks = [
@@ -79,7 +80,7 @@ export function ContentSection() {
           {/* Columna izquierda */}
           <motion.div variants={itemVariants} className="space-y-8">
             <div className="flex flex-row items-center gap-6">
-              <img
+              <Image
                 src="/images/torro-photo.jpg"
                 alt="Raphaël Torro"
                 className="w-14 h-14 hidden md:block lg:hidden lg:block rounded-full object-cover border-4 border-gray-300"
@@ -92,7 +93,7 @@ export function ContentSection() {
               </h2>
             </div>
             <div className="flex flex-col lg:flex-row items-center md:items-start lg:items-center gap-6">
-              <img
+              <Image
                 src="/images/torro-photo.jpg"
                 alt="Raphaël Torro"
                 className="w-24 h-24 md:hidden lg:block rounded-full object-cover border-4 border-gray-300"
@@ -107,7 +108,7 @@ export function ContentSection() {
               <blockquote className="border-l-8 pl-4 italic text-sm text-muted-foreground">
                 <strong className="text-black">Le Progrès</strong> : "Grâce à Resaneo, sa plateforme de réservations de vols pour
                 les agences de voyages, Raphaël Torro est cette année en tête de notre palmarès des jeunes patrons du Rhône par
-                chiffre d’affaires."
+                chiffre d’&apos;affaires."
               </blockquote>
             </div>
           </motion.div>
