@@ -227,25 +227,26 @@ const detectActiveItem = () => {
             {solutions.map((solution, index) => {
               const isActive = index === activeIndex;
               return (
-                <motion.div
-                  key={index}
-                  ref={(el) => {
-                    itemRefs.current[index] = el;
-                  }}
-                  onMouseEnter={() => setHoveredIndex(index)}
-                  onMouseLeave={() => setHoveredIndex(0)}
-                  className={`
-                    flex-shrink-0 snap-start
-                    w-[90vw] sm:w-[447px] lg:w-[667px] 2xl:w-[707px]
-                    shadow-sm rounded-2xl transition overflow-hidden border-2 border-black cursor-pointer duration-700 
-                    ${isActive ? "bg-black text-white" : ""}
-                  `}
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 10 }}
-                  transition={{ duration: 0.4, delay: index * 0.1 }}
-                  layout
-                >
+                  <motion.div
+        key={index}
+        ref={(el) => {
+          itemRefs.current[index] = el;
+        }}
+        onMouseEnter={() => setHoveredIndex(index)}
+        onMouseLeave={() => setHoveredIndex(null)}  // mejor null que 0 para indicar "ninguno"
+        className={`
+          flex-shrink-0 snap-start
+          w-[90vw] sm:w-[447px] lg:w-[667px] 2xl:w-[707px]
+          shadow-sm rounded-2xl transition overflow-hidden border-2 border-black cursor-pointer duration-700 
+          ${isActive ? "bg-black text-white" : ""}
+          ${hoveredIndex && !isActive ? "bg-gray-200" : ""}  // Ejemplo: color diferente cuando está hover y no activo
+        `}
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: 10 }}
+        transition={{ duration: 0.4, delay: index * 0.1 }}
+        layout
+      >
                   <div className="flex flex-col lg:flex-row items-center">
                     <div className="relative w-full h-[300px] sm:h-[265px] lg:w-[40%] 2xl:w-[50%] lg:h-[460px] 2xl:h-[500px] rounded-lg overflow-hidden lg:border-r-2 border-black">
                       <Image
