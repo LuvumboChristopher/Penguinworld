@@ -9,7 +9,7 @@ export function IntroSection() {
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
           className="w-full max-w-[90%] mx-auto lg:w-[60%] space-y-8"
         >
@@ -17,7 +17,7 @@ export function IntroSection() {
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
-            transition={{ delay: 0.2, duration: 0.6 }}
+            transition={{ delay: 0.2, duration: 0.8 }}
             className="text-4xl xl:text-5xl font-bold"
             style={{ letterSpacing: "-0.1em" }}
           >
@@ -62,13 +62,13 @@ export function IntroSection() {
   whileInView={{ opacity: 1 }}
   viewport={{ once: true, amount: 0.3 }}
   transition={{ duration: 0.5, delay: 0.3 }}
-  className="relative w-full h-[290px] md:h-[370px] lg:h-[655px] lg:w-[40%] overflow-hidden lg:rounded-3xl lg:border-2 border-black cursor-pointer lg:hover:scale-[101%] duration-300"
+  className="relative w-full h-[230px] md:h-[370px] lg:h-[655px] lg:w-[40%] overflow-hidden lg:rounded-3xl lg:border-2 border-black cursor-pointer lg:hover:scale-[101%] duration-300"
 >
   <Image
     src="/images/nous-sommes.jpg"
     alt="À propos de PenguinWorld"
     fill
-    className="object-cover object-[center_75%] md:object-[center_72%]"
+    className="object-cover object-[center_85%] md:object-[center_72%]"
     priority
   />
 

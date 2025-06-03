@@ -182,7 +182,7 @@ const detectActiveItem = () => {
           </motion.h2>
 
           <motion.p
-            className="w-full xl:w-max mx-auto lg:mr-auto leading-relaxed"
+            className="w-full xl:w-max mx-auto lg:mr-auto leading-relaxed text-muted-foreground text-sm md:text-base text-justify leading-relaxed text-sm text-muted-foreground"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.4 }}
@@ -197,24 +197,26 @@ const detectActiveItem = () => {
         </div>
 
         {/* Flechas */}
-        <button
-          onClick={() => scroll("left")}
-          disabled={!canScrollLeft}
-          className={`absolute top-[45%] sm:top-[60%] -left-5 transform -translate-y-1/2 z-10 bg-white border border-black rounded-full p-2 shadow transition-colors ${
-            canScrollLeft ? "text-black" : "text-gray-300 border-gray-300"
-          }`}
-        >
-          <ChevronLeft className="w-6 h-6" />
-        </button>
-        <button
-          onClick={() => scroll("right")}
-          disabled={!canScrollRight}
-          className={`absolute top-[45%] sm:top-[60%] -right-5 transform -translate-y-1/2 z-10 bg-white border border-black rounded-full p-2 shadow transition-colors ${
-            canScrollRight ? "text-black" : "text-gray-300 border-gray-300"
-          }`}
-        >
-          <ChevronRight className="w-6 h-6" />
-        </button>
+        <div className="hidden sm:block">
+          <button
+            onClick={() => scroll("left")}
+            disabled={!canScrollLeft}
+            className={`absolute top-[45%] sm:top-[60%] -left-5 transform -translate-y-1/2 z-10 bg-white border border-black rounded-full p-2 shadow transition-colors ${
+              canScrollLeft ? "text-black" : "text-gray-300 border-gray-300"
+            }`}
+          >
+            <ChevronLeft className="w-6 h-6" />
+          </button>
+          <button
+            onClick={() => scroll("right")}
+            disabled={!canScrollRight}
+            className={`absolute top-[45%] sm:top-[60%] -right-5 transform -translate-y-1/2 z-10 bg-white border border-black rounded-full p-2 shadow transition-colors ${
+              canScrollRight ? "text-black" : "text-gray-300 border-gray-300"
+            }`}
+          >
+            <ChevronRight className="w-6 h-6" />
+          </button>
+        </div>
 
         {/* Carrusel */}
         <div
@@ -256,8 +258,8 @@ const detectActiveItem = () => {
                     </div>
                     <div className="w-full lg:w-[60%] 2xl:w-[50%] p-6 flex flex-col">
                       <div className="flex flex-col flex-grow justify-between h-full">
-                        <div className="flex items-center text-left gap-4 min-h-[80px]">
-                          <h2 className="text-3xl font-bold">{solution.title}</h2>
+                        <div className="flex items-center text-left gap-4 md:min-h-[80px]">
+                          <h2 className="text-3xl font-bold mb-3">{solution.title}</h2>
                         </div>
                         <p className="text-sm text-justify flex-grow sm:min-h-[160px] lg:pb-6">
                           {solution.description}

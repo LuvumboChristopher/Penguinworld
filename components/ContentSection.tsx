@@ -41,7 +41,7 @@ const itemVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.3,
+      duration: 0.8,
       ease: "easeInOut", 
     },
   },
@@ -60,7 +60,7 @@ export function ContentSection() {
   }, [hoveredIndex]);
 
   return (
-    <section className="relative py-16 lg:py-24">
+    <section className="relative py-10 lg:py-24">
       {/* Fondo */}
       <div
         className="absolute inset-0 bg-cover bg-center"
@@ -73,7 +73,7 @@ export function ContentSection() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
-        className="relative container mx-auto max-w-6xl p-12 rounded-3xl border-2 border-black bg-white bg-opacity-95"
+        className="relative container mx-auto max-w-6xl p-8 md:p-12 rounded-3xl border-2 border-black bg-white bg-opacity-95"
       >
         <div className="grid md:grid-cols-2 gap-16 items-start">
           {/* Columna izquierda */}
