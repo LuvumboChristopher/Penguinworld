@@ -3,7 +3,7 @@ import { CircleArrowRight } from "lucide-react";
 
 export function HeroSection() {
   return (
-    <section className="relative h-screen 2xl:h-[71vh] overflow-hidden">
+<section className="relative [height:calc(100vh-200px)] sm:h-screen 2xl:h-[71vh] overflow-hidden">
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
         src="/videos/hero.mp4"

@@ -10,7 +10,7 @@ const solutions = [
   {
     title: "Resaneo",
     icon: null,
-    image: "/images/resaneo-placeholder.jpg",
+    image: "/images/nous-sommes.jpg",
     description: `Resaneo est une plateforme de réservation de vols professionnels qui offre une expérience utilisateur fluide et rapide. Grâce à son moteur de recherche avancé, les agences peuvent comparer instantanément des centaines de compagnies aériennes, optimiser leurs offres et fournir un service client exceptionnel. La solution intègre des outils de gestion performants pour les pros du voyage.`,
     infoUrl: "#",
     siteUrl: "https://www.resaneo.com",
@@ -167,13 +167,13 @@ const detectActiveItem = () => {
             Solutions proposées par
             <div className="lg:max-w-4xl lg:mr-auto flex items-end flex-wrap">
               <h2
-                className="font-bold text-[clamp(2rem,6vw,3rem)] leading-none"
+                className="font-bold text-[clamp(2rem,8vw,3rem)] leading-none"
                 style={{ letterSpacing: "-0.1em" }}
               >
                 Penguin
               </h2>
               <h2
-                className="outlined-text-black text-[clamp(2rem,6vw,3rem)] md:-ml-2 leading-none"
+                className="outlined-text-black text-[clamp(2rem,8vw,3rem)] md:-ml-2 leading-none"
                 style={{ letterSpacing: "-0.1em" }}
               >
                 World
@@ -246,7 +246,7 @@ const detectActiveItem = () => {
                   layout
                 >
                   <div className="flex flex-col lg:flex-row items-center">
-                    <div className="relative w-full h-[300px] sm:h-[265px] lg:w-[40%] 2xl:w-[50%] lg:h-[460px] 2xl:h-[500px] rounded-lg overflow-hidden lg:border-r-2 border-black">
+                    <div className="relative w-full h-[265px] lg:w-[40%] 2xl:w-[50%] lg:h-[460px] 2xl:h-[500px] rounded-lg overflow-hidden lg:border-r-2 border-black">
                       <Image
                         src={solution.image}
                         alt={`${solution.title} image`}

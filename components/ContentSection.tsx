@@ -77,7 +77,7 @@ export function ContentSection() {
       >
         <div className="grid md:grid-cols-2 gap-16 items-start">
           {/* Columna izquierda */}
-          <motion.div variants={itemVariants} className="space-y-8">
+          <motion.div variants={itemVariants} className="space-y-2 md:space-y-8">
             <div className="flex flex-row items-center gap-6">
               <img
                 src="/images/torro-photo.jpg"
