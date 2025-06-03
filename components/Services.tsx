@@ -1,6 +1,6 @@
 "use client"
 
-import { useRef, useState, useEffect } from "react"
+import { useRef, useState, useEffect, useCallback } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { CircleArrowRight } from "lucide-react"
 import Image from "next/image"
@@ -58,7 +58,7 @@ const solutions = [
 ]
 
 export function Services() {
-  const [hoveredIndex, setHoveredIndex] = useState(0)
+const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false)
   const [canScrollRight, setCanScrollRight] = useState(true)
   const scrollRef = useRef<HTMLDivElement>(null)
@@ -119,14 +119,13 @@ const detectActiveItem = () => {
 };
 
 
-  const checkScroll = () => {
+  const checkScroll = useCallback(() => {
     const el = scrollRef.current
     if (el) {
       setCanScrollLeft(el.scrollLeft > 0)
       setCanScrollRight(el.scrollLeft + el.clientWidth < el.scrollWidth - 1)
       detectActiveItem()
-    }
-  }
+    }}, []);
 
   useEffect(() => {
     const el = scrollRef.current
