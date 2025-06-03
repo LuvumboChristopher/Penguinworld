@@ -49,6 +49,13 @@ const projects = {
   ],
 }
 
+interface Project {
+  title: string
+  description: string
+  url: string
+  image: string
+}
+
 export function FeaturedProjects() {
   return (
     <section className="py-16 px-4 bg-gray-50">
@@ -94,7 +101,7 @@ export function FeaturedProjects() {
   )
 }
 
-function ProjectCard({ title, description, url, image }: any) {
+function ProjectCard({ title, description, url, image }: Project) {
   return (
     <Card className="border-0 shadow-none">
       <CardContent className="p-0 space-y-4">

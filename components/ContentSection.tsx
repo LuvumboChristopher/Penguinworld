@@ -106,9 +106,9 @@ export function ContentSection() {
             </div>
             <div className="pt-8">
               <blockquote className="border-l-8 pl-4 italic text-sm text-muted-foreground">
-                <strong className="text-black">Le Progrès</strong> : "Grâce à Resaneo, sa plateforme de réservations de vols pour
+                <strong className="text-black">Le Progrès</strong> : &quot;Grâce à Resaneo, sa plateforme de réservations de vols pour
                 les agences de voyages, Raphaël Torro est cette année en tête de notre palmarès des jeunes patrons du Rhône par
-                chiffre d&apos;affaires."
+                chiffre d&apos;affaires.&quot;
               </blockquote>
             </div>
           </motion.div>
