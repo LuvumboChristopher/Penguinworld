@@ -1,8 +1,16 @@
 "use client";
 import { CircleArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 export function HeroSection() {
+
+  useEffect(() => {
+  if (window.location.hash === "#solutions") {
+    history.replaceState(null, "", window.location.pathname);
+  }
+}, []);
+
   return (
     <section className="relative [height:calc(100vh-280px)] sm:h-screen 2xl:h-[71vh] overflow-hidden">
       <video

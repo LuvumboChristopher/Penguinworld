@@ -267,7 +267,7 @@ export function Services() {
                   exit={{ opacity: 0 }}
                 >
                   <motion.div
-                    className="bg-white text-black rounded-2xl overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-transparent shadow-lg sm:h-max  sm:w-[570px] max-w-[90%] max-h-[90%] w-full p-10 md:p-12 relative space-y-4"
+                    className="bg-white text-black rounded-2xl overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-transparent shadow-lg sm:h-max  sm:w-[570px] max-w-[90%] max-h-[90%] w-full p-10 md:p-12 relative"
                     onClick={(e) => e.stopPropagation()}
                     initial={{ scale: 0.9, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
