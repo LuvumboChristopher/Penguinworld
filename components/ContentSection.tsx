@@ -7,17 +7,17 @@ const blocks = [
   {
     title: "Une vision à 360° du secteur",
     content:
-      "En tant qu&apos;entrepreneur actif, je vous apporte une vision actuelle et à 360° du marché du tourisme. Mon objectif est de faire évoluer le secteur avec pragmatisme et modernité.",
+      "En tant qu'entrepreneur actif, je vous apporte une vision actuelle et à 360° du marché du tourisme. Mon objectif est de faire évoluer le secteur avec pragmatisme et modernité.",
   },
   {
     title: "L'engagement terrain",
     content:
-      "Je suis engagé au quotidien auprès des professionnels du voyage. En tant que membre du Comité des adhésions de l&apos;APST et délégué régional, j&apos;accompagne les futurs acteurs du tourisme avec énergie et réalisme.",
+      "Je suis engagé au quotidien auprès des professionnels du voyage. En tant que membre du Comité des adhésions de l'APST et délégué régional, j'accompagne les futurs acteurs du tourisme avec énergie et réalisme.",
   },
   {
     title: "Une passion pour l'entrepreneuriat",
     content:
-      "Je suis un entrepreneur passionné. J&apos;aime aller au bout des dossiers, les traiter avec rigueur et humanité. Mon approche repose sur l&apos;écoute et l&apos;efficacité.",
+      "Je suis un entrepreneur passionné. J'aime aller au bout des dossiers, les traiter avec rigueur et humanité. Mon approche repose sur l'écoute et l'efficacité.",
   },
 ];
 
@@ -75,9 +75,9 @@ export function ContentSection() {
         viewport={{ once: true, amount: 0.1 }}
         className="relative container mx-auto max-w-6xl p-8 md:p-12 rounded-3xl border-2 border-black bg-white bg-opacity-95"
       >
-        <div className="grid md:grid-cols-2 gap-16 items-start">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start">
           {/* Columna izquierda */}
-          <motion.div variants={itemVariants} className="space-y-2 md:space-y-8">
+          <motion.div variants={itemVariants} className="space-y-4 md:space-y-8">
             <div className="flex flex-row items-center gap-6">
               <img
                 src="/images/torro-photo.jpg"
@@ -99,15 +99,15 @@ export function ContentSection() {
               />
               <p className="text-muted-foreground text-center lg:text-justify-optimized text-sm ">
                 Je suis Raphaël Torro, Président de VLC Travel et fondateur de la plateforme Resaneo. Depuis plusieurs années,
-                je m&apos;investis dans la transformation du secteur du tourisme. Comprendre finement le marché, innover et accompagner
+                je m'investis dans la transformation du secteur du tourisme. Comprendre finement le marché, innover et accompagner
                 les professionnels du voyage : voilà ce qui guide chacune de mes actions.
               </p>
             </div>
             <div className="pt-8">
-              <blockquote className="border-l-8 pl-4 italic  text-muted-foreground">
+              <blockquote className="border-l-8 pl-4 italic text-sm md:text-base  text-muted-foreground">
                 <strong className="text-black">Le Progrès</strong> : &quot;Grâce à Resaneo, sa plateforme de réservations de vols pour
                 les agences de voyages, Raphaël Torro est cette année en tête de notre palmarès des jeunes patrons du Rhône par
-                chiffre d&apos;affaires.&quot;
+                chiffre d'affaires.&quot;
               </blockquote>
             </div>
           </motion.div>
@@ -129,7 +129,7 @@ export function ContentSection() {
                     borderColor: isActive ? "#feb516" : "black",
                   }}
                   transition={{ duration: 0.3 }}
-                  className="border-l-8 pl-6 cursor-pointer py-2 transition-colors duration-300 ease-out"
+                  className="border-b-8  pb-6 sm:border-l-8 sm:pl-6 cursor-pointer py-2 transition-colors duration-300 ease-out"
                   style={{
                     borderColor: isActive ? "#feb516" : "black",
                   }}

@@ -15,7 +15,7 @@ export function Footer() {
   return (
     <footer className="bg-black text-white ">
       <div className=" 2xl:max-w-[90%] mx-auto flex flex-col xl:flex-row justify-center border-t-2 border-b-2 border-black">
-        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between xl:flex-col xl:items-start xl:gap-10 space-y-10 sm:space-y-0 p-10 xl:p-20 xl:py-20 xl:w-1/3">
+        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between xl:flex-col xl:items-start xl:gap-10 space-y-4 sm:space-y-0 p-10 xl:p-20 xl:py-20 xl:w-1/3">
           <div className="sm:flex sm:flex-col sm:justify-start sm:items-start">
             <Image
               src="/images/penguinworldlogo.png"

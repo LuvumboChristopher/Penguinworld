@@ -57,7 +57,7 @@ export function FeatureList() {
               variants={itemVariants}
               className="text-left"
             >
-              <h2 className="text-xl font-semibold mb-6">{feature.title}</h2>
+              <h2 className="text-lg md:text-xl font-semibold mb-3 md:mb-6">{feature.title}</h2>
               <p className="text-muted-foreground text-sm text-justify-optimized">
                 {feature.description}
               </p>

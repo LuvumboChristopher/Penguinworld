@@ -4,14 +4,14 @@ import Image from "next/image"
 
 export function IntroSection() {
   return (
-    <section className="relative pt-10 lg:py-14">
+    <section className="relative pt-8 lg:py-14">
       <div className="w-full lg:max-w-[90%] 2xl:max-w-[75%] mx-auto flex flex-col lg:flex-row gap-10 lg:gap-12 xl:gap-20 items-center">
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
-          className="w-full max-w-[90%] mx-auto lg:w-[60%] space-y-8"
+          className="w-full max-w-[90%] mx-auto lg:w-[60%] space-y-4 md:space-y-8"
         >
           <motion.h2
             initial={{ opacity: 0, y: -20 }}
@@ -22,7 +22,7 @@ export function IntroSection() {
             style={{ letterSpacing: "-0.1em" }}
           >
             À propos de{' '}
-            <span className="outlined-text-black">
+            <span className="md:outlined-text-black">
               nous
             </span>
           </motion.h2>

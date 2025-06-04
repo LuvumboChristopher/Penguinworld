@@ -140,7 +140,6 @@ export function Services() {
             exit={{ opacity: 0, y: 20 }}
             transition={{ duration: 0.5 }}
           >
-            {/* Flechas */}
             <div className="hidden sm:block">
               <button
                 onClick={() => scroll("left")}
@@ -204,15 +203,15 @@ export function Services() {
                             src={solution.image}
                             alt={`${solution.title} image`}
                             fill
-                            className="object-cover object-[center_83%] md:object-[center_72%] md:object-[center_85%]"
+                            className="object-cover object-[center_88%] md:object-[center_72%] md:object-[center_85%]"
                             placeholder="blur"
                             blurDataURL="/placeholder.svg"
                           />
                         </div>
-                        <div className="w-full md:w-[50%] lg:w-full xl:w-[62.5%] p-8 flex flex-col">
+                        <div className="w-full md:w-[50%] lg:w-full xl:w-[62.5%] p-6 md:p-8 flex flex-col">
                           <div className="flex flex-col flex-grow justify-between gap-2 h-full">
                             <div className="flex items-center text-left gap-4">
-                              <h2 className="w-full  text-2xl md:text-3xl text-center sm:text-left font-bold mb-3">{solution.title}</h2>
+                              <h2 className="w-full  text-2xl md:text-3xl font-bold mb-3">{solution.title}</h2>
                             </div>
                             <p className="text-sm text-justify-optimized  overflow-hidden text-ellipsis line-clamp-6">
                               {solution.description}
