@@ -240,7 +240,7 @@ export function Services() {
                                   rel="noopener noreferrer"
                                   className="text-[12px] sm:text-sm group border-[2px] border-black hover:bg-white bg-[#FEB516] hover:text-black text-black px-5 py-2 rounded-xl font-medium flex gap-2 justify-between items-center transition-all duration-300"
                                 >
-                                 Visiter le site
+                                  Visiter le site
                                   <div className="border-l group-hover:border-black border-black py-2">
                                     <div className="ml-3 w-5 h-5 flex items-center justify-center">
                                       <CircleArrowRight className="transition-transform duration-500 transform group-hover:rotate-180" />

@@ -1,11 +1,12 @@
 "use client"
 import { motion } from "framer-motion"
 import Image from "next/image"
+import { WorldClocks } from "./clocks"
 
 export function IntroSection() {
   return (
-    <section className="relative pt-8 lg:py-14">
-      <div className="w-full lg:max-w-[90%] 2xl:max-w-[75%] mx-auto flex flex-col lg:flex-row gap-10 lg:gap-12 xl:gap-20 items-center">
+    <section className="relative">
+      <div className="w-full pt-8 lg:py-14 lg:max-w-[90%] 2xl:max-w-[75%] mx-auto flex flex-col lg:flex-row gap-10 lg:gap-12 xl:gap-20 items-center">
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -13,28 +14,30 @@ export function IntroSection() {
           transition={{ duration: 0.7, ease: "easeOut" }}
           className="w-full max-w-[90%] mx-auto lg:w-[60%] space-y-4 md:space-y-8"
         >
-          <motion.h2
-            initial={{ opacity: 0, y: -20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ delay: 0.2, duration: 0.8 }}
-            className="text-3xl md:text-4xl xl:text-5xl font-bold"
-            style={{ letterSpacing: "-0.1em" }}
-          >
-            À propos de{' '}
-            <span className="md:outlined-text-black">
-              nous
-            </span>
-          </motion.h2>
-          <motion.p
-            initial={{ opacity: 0, y: -10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ delay: 0.3, duration: 0.6 }}
-            className="text-muted-foreground text-sm sm:text-base md:text-lg italic"
-          >
-            Derrière chaque destination, une intention : rassembler, relier, inspirer.
-          </motion.p>
+          <div className="space-y-2">
+            <motion.h2
+              initial={{ opacity: 0, y: -20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ delay: 0.2, duration: 0.8 }}
+              className="text-3xl md:text-4xl xl:text-5xl font-bold"
+              style={{ letterSpacing: "-0.1em" }}
+            >
+              À propos de{' '}
+              <span className="md:outlined-text-black">
+                nous
+              </span>
+            </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, y: -10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ delay: 0.3, duration: 0.6 }}
+              className="text-muted-foreground text-sm sm:text-base xl:text-lg italic"
+            >
+              Derrière chaque destination, une intention : rassembler, relier, inspirer.
+            </motion.p>
+          </div>
 
           <div className="space-y-6">
             <p className="text-sm md:text-base text-justify-optimized">
@@ -51,38 +54,63 @@ export function IntroSection() {
             </p>
           </div>
 
-          <hr className="border-t border-gray-300 my-8" />
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ delay: 0.4, duration: 0.6 }}
-            className="flex items-center gap-6 max-w-xl mr-auto"
+            className="hidden lg:block flex items-center gap-6 mr-auto"
           >
-            <blockquote className="italic text-sm md:text-base lg:text-lg text-gray-700 leading-relaxed relative pl-6 before:absolute before:left-0 before:top-0 before:text-6xl before:text-gray-300 before:content-['“'] before:-translate-y-2">
+            <hr className="hidden lg:block border-t border-gray-300 my-8" />
+            <blockquote className=" max-w-xl italic text-sm md:text-base  text-gray-700 leading-relaxed relative pl-6 before:absolute before:left-0 before:top-0 before:text-6xl before:text-gray-300 before:content-['“'] before:-translate-y-2">
               Le plus beau voyage, c&apos;est celui qu&apos;on n&apos;a pas encore fait.<br />— Loïck Peyron
             </blockquote>
           </motion.div>
         </motion.div>
 
-        <motion.div
+<motion.div
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  viewport={{ once: true, amount: 0.3 }}
+  transition={{ duration: 0.5, delay: 0.3 }}
+  className="relative w-full h-[200px] sm:h-[150px] lg:h-[655px] lg:w-[40%] overflow-hidden lg:rounded-3xl lg:border-2 border-black cursor-pointer lg:hover:scale-[101%] duration-300"
+>
+
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, amount: 0.3 }}
+    transition={{ delay: 0.4, duration: 0.6 }}
+    className="absolute inset-0 lg:hidden flex items-center gap-6 mr-auto z-10 p-4"
+  >
+    <hr className="border-t border-gray-300 my-8" />
+    <blockquote className="max-w-xl mr-auto italic text-sm md:text-md text-white leading-relaxed relative md:pl-6 before:absolute before:left-0 before:top-0 before:text-6xl before:text-white/50 before:content-['“'] before:-translate-y-2">
+      Le plus beau voyage, c&apos;est celui qu&apos;on n&apos;a pas encore fait.<br />— Loïck Peyron
+    </blockquote>
+  </motion.div>
+
+  <Image
+    src="/images/nous-sommes.jpg"
+    alt="À propos de PenguinWorld"
+    fill
+    className="object-cover object-[center_85%] sm:object-[center_90%]"
+    priority
+  />
+    <div className="absolute inset-0 bg-black/75 lg:hidden z-0" />
+
+</motion.div>
+
+      </div>
+       <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="relative w-full h-[380px] lg:h-[655px] lg:w-[40%] overflow-hidden lg:rounded-3xl lg:border-2 border-black cursor-pointer lg:hover:scale-[101%] duration-300"
+          className=""
         >
-          <Image
-            src="/images/nous-sommes.jpg"
-            alt="À propos de PenguinWorld"
-            fill
-            className="object-cover object-[center_85%] md:object-[center_72%]"
-            priority
-          />
-          <div className="absolute inset-0 bg-black/40 lg:hidden z-10" />
+          <WorldClocks />
         </motion.div>
-      </div>
     </section>
   )
 }

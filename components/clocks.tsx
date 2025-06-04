@@ -52,9 +52,9 @@ export function WorldClocks() {
     }, [])
 
     return (
-        <section className="">
-            <div className="container border-b-2 border-black w-full overflow-hidden py-6 ">
-                <div className="flex animate-scroll whitespace-nowrap gap-10 py-6">
+        <section className="border-t-2 border-black">
+            <div className="w-full overflow-hidden py-6 ">
+                <div className="flex animate-scroll whitespace-nowrap gap-10 ">
                     {[...timeZones, ...timeZones].map((zone, i) => {
                         const time = times[i % timeZones.length]
                         const hours = time.getHours() % 12
@@ -146,7 +146,7 @@ export function WorldClocks() {
                 </div>
                 <style jsx>{`
           .animate-scroll {
-            animation: scroll 60s linear infinite;
+            animation: scroll 30s linear infinite;
           }
           @keyframes scroll {
             0% {

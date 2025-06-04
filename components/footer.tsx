@@ -20,7 +20,7 @@ export function Footer() {
             <Image
               src="/images/penguinworldlogo.png"
               alt="Favicon Penguin World"
-              className="w-40 pb-4"
+              className="w-32 pb-4"
               width={1000}
               height={1000}
             />
@@ -34,7 +34,7 @@ export function Footer() {
               Dirigé par : Torro Raphael
             </p>
           </div>
-          <div className="flex gap-6 justify-start sm:justify-end">
+          <div className="pt-6 sm:pt-0 flex gap-6 justify-start sm:justify-end">
             <a
               href="#"
               aria-label="Facebook"

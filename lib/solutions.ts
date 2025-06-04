@@ -28,7 +28,7 @@ export const solutions: Solution[] = [
         title: "Quartier Libre",
         icon: null,
         image: "/images/quartier-libre-placeholder.jpg",
-        description: `Quartier Libre est une marque de voyages culturels haut de gamme qui conçoit, développe et propose des circuits accompagnés en Europe et dans le monde, pensés pour les voyageurs curieux, exigeants et passionnés par le patrimoine, l’histoire et la culture. Chaque voyage est minutieusement élaboré par une équipe de passionnés, qui sélectionne des guides experts, des hébergements de charme et des itinéraires équilibrés, alliant découvertes incontournables et expériences hors des sentiers battus.`
+        description: `Quartier Libre est une marque de voyages culturels haut de gamme qui conçoit, développe et propose des circuits accompagnés en Europe et dans le monde, pensés pour les voyageurs curieux, exigeants et passionnés par le patrimoine, l’histoire et la culture. Chaque voyage est minutieusement élaboré par une équipe de passionnés, qui sélectionne des guides experts, des hébergements de charme et des itinéraires équilibrés.`
 
         , infoUrl: "#",
         siteUrl: "https://www.quartier-libre.pro",
