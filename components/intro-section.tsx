@@ -9,7 +9,7 @@ export function IntroSection() {
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.4 }}
+          viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
           className="w-full max-w-[90%] mx-auto lg:w-[60%] space-y-4 md:space-y-8"
         >
@@ -28,16 +28,16 @@ export function IntroSection() {
           </motion.h2>
 
           <div className="space-y-6">
-            <p className="text-justify-optimized">
+            <p className="text-sm text-justify-optimized">
               Le groupe PenguinWorld et sa large palette de services mise à disposition des professionnels et des voyageurs, se situe au cœur de cette réalité, nous en avons fait notre ADN, notre mission première, et celle de toutes nos équipes d&apos;experts disponibles et passionnés qui contribuent à diffuser ce souffle de concorde et paix à travers le monde.
             </p>
-            <p className="text-justify-optimized">
+            <p className="text-sm text-justify-optimized">
               Un voyage réussi est celui où toute la chaine humaine a été au rendez-vous, et qui aura permis au voyageur de gagner les espaces de liberté et de découverte auxquels il aspire.
             </p>
-            <p className="text-justify-optimized">
+            <p className="text-sm text-justify-optimized">
               Tous unis, portés par nos passions et nos rêves, nous souhaitons vous faire partager cette noble mission : rapprocher les peuples, et contribuer à diffuser la paix, partout sur les chemins, les routes, les mers, et les océans de notre merveilleuse Terre.
             </p>
-            <p className="text-justify-optimized">
+            <p className="text-sm text-justify-optimized">
               N&apos;hésitez jamais à partir loin, au delà de toutes les mers, toutes les frontières, tous les pays, toutes les croyances.
             </p>
           </div>
