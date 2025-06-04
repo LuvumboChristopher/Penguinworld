@@ -26,18 +26,27 @@ export function IntroSection() {
               nous
             </span>
           </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: -10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ delay: 0.3, duration: 0.6 }}
+            className="text-muted-foreground text-sm sm:text-base md:text-lg italic"
+          >
+            Derrière chaque destination, une intention : rassembler, relier, inspirer.
+          </motion.p>
 
           <div className="space-y-6">
-            <p className="text-sm text-justify-optimized">
+            <p className="text-sm md:text-base text-justify-optimized">
               Le groupe PenguinWorld et sa large palette de services mise à disposition des professionnels et des voyageurs, se situe au cœur de cette réalité, nous en avons fait notre ADN, notre mission première, et celle de toutes nos équipes d&apos;experts disponibles et passionnés qui contribuent à diffuser ce souffle de concorde et paix à travers le monde.
             </p>
-            <p className="text-sm text-justify-optimized">
+            <p className="text-sm md:text-base text-justify-optimized">
               Un voyage réussi est celui où toute la chaine humaine a été au rendez-vous, et qui aura permis au voyageur de gagner les espaces de liberté et de découverte auxquels il aspire.
             </p>
-            <p className="text-sm text-justify-optimized">
+            <p className="text-sm md:text-base text-justify-optimized">
               Tous unis, portés par nos passions et nos rêves, nous souhaitons vous faire partager cette noble mission : rapprocher les peuples, et contribuer à diffuser la paix, partout sur les chemins, les routes, les mers, et les océans de notre merveilleuse Terre.
             </p>
-            <p className="text-sm text-justify-optimized">
+            <p className="text-sm md:text-base text-justify-optimized">
               N&apos;hésitez jamais à partir loin, au delà de toutes les mers, toutes les frontières, tous les pays, toutes les croyances.
             </p>
           </div>
@@ -51,7 +60,7 @@ export function IntroSection() {
             transition={{ delay: 0.4, duration: 0.6 }}
             className="flex items-center gap-6 max-w-xl mr-auto"
           >
-            <blockquote className="italic text-base lg:text-lg text-gray-700 leading-relaxed relative pl-6 before:absolute before:left-0 before:top-0 before:text-6xl before:text-gray-300 before:content-['“'] before:-translate-y-2">
+            <blockquote className="italic text-sm md:text-base lg:text-lg text-gray-700 leading-relaxed relative pl-6 before:absolute before:left-0 before:top-0 before:text-6xl before:text-gray-300 before:content-['“'] before:-translate-y-2">
               Le plus beau voyage, c&apos;est celui qu&apos;on n&apos;a pas encore fait.<br />— Loïck Peyron
             </blockquote>
           </motion.div>
@@ -62,7 +71,7 @@ export function IntroSection() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="relative w-full h-[230px] md:h-[370px] lg:h-[655px] lg:w-[40%] overflow-hidden lg:rounded-3xl lg:border-2 border-black cursor-pointer lg:hover:scale-[101%] duration-300"
+          className="relative w-full h-[380px] lg:h-[655px] lg:w-[40%] overflow-hidden lg:rounded-3xl lg:border-2 border-black cursor-pointer lg:hover:scale-[101%] duration-300"
         >
           <Image
             src="/images/nous-sommes.jpg"

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export function HeroSection() {
   return (
-    <section className="relative [height:calc(100vh-195px)] sm:h-screen 2xl:h-[71vh] overflow-hidden">
+    <section className="relative [height:calc(100vh-217px)] sm:h-screen 2xl:h-[71vh] overflow-hidden">
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
         src="/videos/hero.mp4"

@@ -56,7 +56,7 @@ export function ContentSection() {
   }
 
   return (
-    <section className="relative py-10 lg:py-14">
+    <section className="relative p-6 sm:py-14">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: "url('/images/promovols-placeholder.jpg')" }}
@@ -68,7 +68,7 @@ export function ContentSection() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.1 }}
-        className="relative container mx-auto max-w-6xl p-10 lg:p-12 rounded-3xl border-2 border-black bg-white bg-opacity-95"
+        className="relative sm:container mx-auto max-w-6xl p-10 lg:p-12 rounded-3xl border-2 border-black bg-white bg-opacity-95"
       >
         <div className="grid md:grid-cols-2 gap-12 xl:gap-16 items-start">
           <motion.div variants={itemVariants} className="space-y-4 md:space-y-8">
@@ -88,19 +88,20 @@ export function ContentSection() {
                 alt="Raphaël Torro"
                 className="w-24 h-24 md:hidden xl:block rounded-full object-cover border-4 border-gray-300"
               />
-              <p className="text-muted-foreground text-center sm:text-left text-sm lg:text-md xl:text-justify-optimized lg:text-base">
+              <p className="text-muted-foreground text-center sm:text-left text-sm lg:text-base xl:text-justify-optimized lg:text-base">
                 Je suis Raphaël Torro, Président de VLC Travel et fondateur de la plateforme Resaneo. Depuis plusieurs années,
                 je m&apos;investis dans la transformation du secteur du tourisme. Comprendre finement le marché, innover et accompagner
                 les professionnels du voyage : voilà ce qui guide chacune de mes actions.
               </p>
             </div>
             <div className="pt-8">
-              <blockquote className="border-l-8 pl-4 italic text-sm sm:text-[12px] md:text-[15px] text-muted-foreground">
-                <strong className="text-black font-bold">Le Progrès</strong> : &quot;Grâce à Resaneo, sa plateforme de réservations de vols pour
+              <blockquote className="border-b-4 pb-4 sm:border-b-0 sm:pb-0 sm:border-l-8 sm:pl-4 italic text-sm sm:text-[12px] md:text-[15px] text-muted-foreground">
+                <strong className="font-black text-black">Le Progrès</strong> : &quot;Grâce à Resaneo, sa plateforme de réservations de vols pour
                 les agences de voyages, Raphaël Torro est cette année en tête de notre palmarès des jeunes patrons du Rhône par
                 chiffre d&apos;affaires.&quot;
               </blockquote>
             </div>
+
           </motion.div>
 
           <div className="h-full flex flex-col justify-between gap-4 lg:gap-6">
