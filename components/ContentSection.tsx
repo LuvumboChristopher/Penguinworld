@@ -56,7 +56,7 @@ export function ContentSection() {
   }
 
   return (
-    <section className="relative p-6 sm:py-14">
+    <section className="relative p-6 sm:py-14 border-t-2 border-b-2 border-black">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: "url('/images/promovols-placeholder.jpg')" }}

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Découvrez PenguinWorld : des solutions de voyage sur mesure pour les entreprises, les professionnels et les voyageurs exigeants. Organisation, flexibilité et expertise au service de vos déplacements.",
   icons: {
-    icon: "/favicon.png",
+    icon: "/favicon.ico",
   },
 };
 

@@ -29,7 +29,7 @@ export function ScrollToTop() {
                     aria-label="Scroll to top"
                     className="
                         fixed bottom-[10px] sm:bottom-[50px] right-[10px] md:bottom-[54px] md:right-0 z-50
-                        p-4 sm:p-3 rounded-xl sm:rounded-none
+                        p-3 rounded-xl sm:rounded-none
                         bg-[#feb516]
                         text-black
                         border-2 border-black
@@ -38,7 +38,7 @@ export function ScrollToTop() {
                         hover:text-white hover:bg-[#feb516]
                     "
                 >
-                    <FaArrowUp className="w-7 h-7 sm:w-6 sm:h-6" />
+                    <FaArrowUp className="w-6 h-6" />
                 </button>
             )}
         </>
