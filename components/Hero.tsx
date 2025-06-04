@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export function HeroSection() {
   return (
-    <section className="relative [height:calc(100vh-200px)] sm:h-screen 2xl:h-[71vh] overflow-hidden">
+    <section className="relative [height:calc(100vh-400px)] sm:h-screen 2xl:h-[71vh] overflow-hidden">
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
         src="/videos/hero.mp4"
@@ -23,12 +23,12 @@ export function HeroSection() {
       >
         <div className="space-y-6 max-w-2xl text-center text-white">
           <div>
-            <div className="text-[clamp(2rem,5vw,1.5rem)] font-bold tracking-tighter text-white">
+            <span className="text-[clamp(0.7rem,4vw,1.75rem)] font-bold tracking-tighter text-white">
               Bienvenue chez
-            </div>
+            </span>
             <h2
               style={{ letterSpacing: "-0.1em" }}
-              className="font-extrabold outlined-text text-[clamp(3rem,10vw,5rem)] -mt-5 lg:-mt-10"
+              className="sm:outlined-text text-[clamp(3rem,10vw,5rem)] -mt-5 lg:-mt-10"
             >
               PenguinWorld
             </h2>

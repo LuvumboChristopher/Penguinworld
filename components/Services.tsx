@@ -214,7 +214,7 @@ export function Services() {
                             <div className="flex items-center text-left gap-4">
                               <h2 className="w-full  text-2xl md:text-3xl text-center sm:text-left font-bold mb-3">{solution.title}</h2>
                             </div>
-                            <p className="text-sm text-justify-optimized  overflow-hidden text-ellipsis line-clamp-5">
+                            <p className="text-sm text-justify-optimized  overflow-hidden text-ellipsis line-clamp-6">
                               {solution.description}
                             </p>
                             <div className="w-full flex flex-col gap-4 pt-6">
