@@ -223,7 +223,7 @@ export function Services() {
                                   className={`w-full
                                 group border-[2px] rounded-xl text-sm px-5 py-2 font-medium flex gap-2 justify-between items-center transition-all duration-300 border-black bg-white text-black hover:border-white hover:bg-transparent hover:text-white`}
                                 >
-                                  <span className="mr-3">Plus d&apos;infos</span>
+                                  <span className="mr-3 stylized">Plus d&apos;infos</span>
                                   <div
                                     className={`border-l py-2 border-black group-hover:border-white`}
                                   >
@@ -240,7 +240,7 @@ export function Services() {
                                   rel="noopener noreferrer"
                                   className="group border-[2px] border-black hover:bg-white bg-[#FEB516] hover:text-black text-black text-sm  px-5 py-2 rounded-xl font-medium flex gap-2 justify-between items-center transition-all duration-300"
                                 >
-                                  <span className="mr-3">Visiter le site</span>
+                                  <span className="mr-3 text-sm">Visiter le site</span>
                                   <div className="border-l group-hover:border-black border-black py-2">
                                     <div className="ml-3 w-5 h-5 flex items-center justify-center">
                                       <CircleArrowRight className="transition-transform duration-500 transform group-hover:rotate-180" />
@@ -267,7 +267,7 @@ export function Services() {
                   exit={{ opacity: 0 }}
                 >
                   <motion.div
-                    className="bg-white text-black sm:rounded-2xl overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-transparent shadow-lg w-screen h-screen sm:h-max  sm:w-[570px] sm:max-w-[90%] sm:max-h-[90%] w-full p-14 md:p-12 relative space-y-4"
+                    className="bg-white text-black rounded-2xl overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-transparent shadow-lg sm:h-max  sm:w-[570px] max-w-[90%] max-h-[90%] w-full p-10 md:p-12 relative space-y-4"
                     onClick={(e) => e.stopPropagation()}
                     initial={{ scale: 0.9, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
