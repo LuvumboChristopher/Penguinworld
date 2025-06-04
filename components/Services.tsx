@@ -216,7 +216,7 @@ export function Services() {
                             <p className="text-sm text-justify-optimized  overflow-hidden text-ellipsis line-clamp-6">
                               {solution.description}
                             </p>
-                            <div className="w-full flex flex-col s:flex-row sm:flex-col gap-4 pt-6">
+                            <div className="w-full flex flex-col s:flex-row sm:flex-col lg:flex-row xl:flex-col   gap-4 pt-6">
                               <div className="w-full" >
                                 <button
                                   onClick={() => openModal(solution)}
