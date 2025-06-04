@@ -275,7 +275,7 @@ export function Services() {
                     transition={{ duration: 0.3 }}
                   >
 
-                    <div className="flex items-center gap-4 mb-4">
+                    <div className="flex items-center gap-4 mb-2">
                       <h2 className="w-full text-2xl md:text-3xl  text-left font-semibold ">
                         {selectedSolution.title}
                       </h2>
