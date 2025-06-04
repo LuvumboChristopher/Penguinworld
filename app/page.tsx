@@ -13,7 +13,7 @@ export default function Home() {
       <Head>
         <title>PenguinWorld - Services de voyage</title>
         <meta name="description" content="Découvrez nos services de mise à disposition" />
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <ScrollToTop />
       <main>

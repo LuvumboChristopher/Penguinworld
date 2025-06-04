@@ -19,6 +19,10 @@
   font-display: swap;
 }
 
+body {
+  font-family: 'Lexend', sans-serif;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -30,11 +34,24 @@ html {
 }
 
 
-p, small, h3 {
+small, h3 {
   font-family: 'Lexend', sans-serif;
   font-weight: 400; 
   letter-spacing: -1px;
+}
 
+.text-justify-optimized {
+  font-family: 'Lexend', sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  line-height: 1.5;
+  word-spacing: 0.02em;
+  letter-spacing: 0.02em;
+}
+
+.text-justify-optimized:last-of-type {
+  text-align-last: left;
 }
 
 h1, h2, h4, h5, h6 {
@@ -69,6 +86,10 @@ h1, h2, h4, h5, h6 {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+    .text-justify-optimized {
+    text-align: justify;
+    text-justify: inter-word;
   }
 }
 

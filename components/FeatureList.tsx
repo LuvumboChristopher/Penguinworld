@@ -1,5 +1,6 @@
 "use client"
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 export function FeatureList() {
   const features = [
@@ -11,12 +12,12 @@ export function FeatureList() {
     {
       title: "2. Engagement collectif",
       description:
-        "Nos entreprises partagent un ADN commun : la collaboration d'abord. Ensemble, nous co-construisons des services qui répondent aux besoins réels de nos clients et de la société.",
+        "Nos entreprises partagent un ADN commun : La collaboration d'abord. Ensemble, nous co-construisons des services qui répondent aux besoins réels de nos clients.",
     },
     {
       title: "3. Excellence et simplicité",
       description:
-        "Nous visons l'excellence, sans complexité inutile. Notre priorité : livrer des produits performants, accessibles et élégants, portés par une exigence de qualité constante.",
+        "Nous visons l'excellence, sans complexité inutile. Notre priorité : Livrer des produits performants, accessibles et élégants, portés par une exigence de qualité constante.",
     },
   ];
 
@@ -35,15 +36,20 @@ export function FeatureList() {
     visible: { opacity: 1, y: 0, transition: { duration: 1, ease: "easeOut" } },
   };
 
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
+
   return (
-    <section className="py-12 2xl:h-[29vh] border-t-4 lg:border-t-0 flex items-center bg-black text-white scroll-mt-[-4px] lg:scroll-mt-0">
+    <section
+      className="py-12 2xl:h-[29vh] border-t-4 lg:border-t-0 flex items-center bg-black text-white scroll-mt-[-4px] lg:scroll-mt-0"
+      ref={ref}
+    >
       <div className="container mx-auto">
         <motion.div
           initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
+          animate={isInView ? "visible" : "hidden"}
           variants={containerVariants}
-          className="grid lg:grid-cols-3 gap-12"
+          className="grid lg:grid-cols-3 gap-10 lg:gap-20"
         >
           {features.map((feature, index) => (
             <motion.div
@@ -51,8 +57,8 @@ export function FeatureList() {
               variants={itemVariants}
               className="text-left"
             >
-              <h2 className="text-xl font-semibold mb-4">{feature.title}</h2>
-              <p className="text-muted-foreground text-sm md:text-base text-justify leading-relaxed text-sm text-muted-foreground">
+              <h2 className="text-xl font-semibold mb-6">{feature.title}</h2>
+              <p className="text-muted-foreground text-sm text-justify-optimized">
                 {feature.description}
               </p>
             </motion.div>

@@ -1,9 +1,10 @@
 "use client";
 import { CircleArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
 
 export function HeroSection() {
   return (
-<section className="relative [height:calc(100vh-200px)] sm:h-screen 2xl:h-[71vh] overflow-hidden">
+    <section className="relative [height:calc(100vh-200px)] sm:h-screen 2xl:h-[71vh] overflow-hidden">
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
         src="/videos/hero.mp4"
@@ -12,13 +13,17 @@ export function HeroSection() {
         loop
         playsInline
       />
-      <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-65" />
+      <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-55" />
 
-      <div className="relative z-10 container mx-auto h-full flex flex-col md:flex-row items-center justify-center gap-12 px-4 animate-fadeUp">
-        <div className="space-y-6 max-w-xl text-center text-white">
-          {/* TÍTULO */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className="relative z-10 container mx-auto h-full flex flex-col md:flex-row items-center justify-center gap-12 px-4"
+      >
+        <div className="space-y-6 max-w-2xl text-center text-white">
           <div>
-            <div className="text-[clamp(2rem,6vw,2.5rem)] font-bold tracking-tighter text-white">
+            <div className="text-[clamp(2rem,5vw,1.5rem)] font-bold tracking-tighter text-white">
               Bienvenue chez
             </div>
             <h2
@@ -29,18 +34,16 @@ export function HeroSection() {
             </h2>
           </div>
 
-          {/* PÁRRAFO */}
           <div>
-            <small className="my-6 block">
+            <small className="-mt-6 text-[14px] block text-center">
               Connecter les professionnels et les voyageurs avec confort et confiance.
             </small>
-            <p className="text-muted-foreground text-sm md:text-base">
+            <p className="pt-8 text-muted-foreground text-sm md:text-base">
               Nous sommes spécialisés dans les services de mise à disposition sur mesure,
               assurant des expériences fluides et efficaces à travers les frontières et les métiers.
             </p>
           </div>
 
-          {/* BOTÓN */}
           <div className="flex justify-center gap-4 pt-4">
             <a
               href="#solutions"
@@ -48,16 +51,14 @@ export function HeroSection() {
             >
               Voir nos solutions
               <div className="border-l group-hover:border-white border-black py-2">
-                  <div className="ml-3 w-5 h-5 flex items-center justify-center">
-                    <CircleArrowRight className="transition-transform duration-500 transform group-hover:rotate-180" />
-                  </div>
+                <div className="ml-3 w-5 h-5 flex items-center justify-center">
+                  <CircleArrowRight className="transition-transform duration-500 transform group-hover:rotate-180" />
+                </div>
               </div>
             </a>
           </div>
-
-
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

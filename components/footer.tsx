@@ -239,17 +239,17 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <p className="bg-black md:bg-white md:text-black text-center text-[13px] sm:text-sm py-4 md:border-t-2 border-white">
+      <div className="w-full bg-black md:bg-white md:text-black text-center text-[13px] sm:text-sm py-4 md:border-t-2 border-white">
         Réalisation et conception par 🚀
         <Link
-          className="font-semibold px-2 hover:text-[#feb516] transition"
+          className="px-2 hover:text-[#feb516] transition"
           href="https://www.linkedin.com/in/christopher-luvumbo/"
           target="_blank"
           rel="noopener noreferrer"
         >
           L.Christopher
         </Link>
-      </p>
+      </div>
     </footer>
   );
 }
