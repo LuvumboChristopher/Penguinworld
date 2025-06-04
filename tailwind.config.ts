@@ -75,6 +75,12 @@ const config: Config = {
 			animation: {
 				smoothFade: 'smoothFade 3s ease-in-out infinite',
 			},
+			   screens: {
+				'2xs': '320px',
+				'xs': '375px',
+				's': '420px',
+
+			}
 		}
 	},
 	plugins: [require("tailwindcss-animate")],

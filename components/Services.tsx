@@ -211,19 +211,19 @@ export function Services() {
                         <div className="w-full md:w-[50%] lg:w-full xl:w-[62.5%] p-6 md:p-8 flex flex-col">
                           <div className="flex flex-col flex-grow justify-between gap-2 h-full">
                             <div className="flex items-center text-left gap-4">
-                              <h2 className="w-full  text-2xl md:text-3xl font-bold mb-3">{solution.title}</h2>
+                              <h2 className="w-full text-2xl sm:text-3xl font-bold mb-3">{solution.title}</h2>
                             </div>
                             <p className="text-sm text-justify-optimized  overflow-hidden text-ellipsis line-clamp-6">
                               {solution.description}
                             </p>
-                            <div className="w-full flex flex-col gap-4 pt-6">
+                            <div className="w-full flex flex-col s:flex-row sm:flex-col gap-4 pt-6">
                               <div className="w-full" >
                                 <button
                                   onClick={() => openModal(solution)}
-                                  className={`w-full
-                                group border-[2px] rounded-xl text-sm px-5 py-2 font-medium flex gap-2 justify-between items-center transition-all duration-300 border-black bg-white text-black hover:border-white hover:bg-transparent hover:text-white`}
+                                  className={`w-full text-[12px] sm:text-sm 
+                                group border-[2px] rounded-xl px-5 py-2 font-medium flex gap-2 justify-between items-center transition-all duration-300 border-black bg-white text-black hover:border-white hover:bg-transparent hover:text-white`}
                                 >
-                                  <span className="mr-3 stylized">Plus d&apos;infos</span>
+                                  Plus d&apos;infos
                                   <div
                                     className={`border-l py-2 border-black group-hover:border-white`}
                                   >
@@ -238,9 +238,9 @@ export function Services() {
                                   href={solution.siteUrl}
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                  className="group border-[2px] border-black hover:bg-white bg-[#FEB516] hover:text-black text-black text-sm  px-5 py-2 rounded-xl font-medium flex gap-2 justify-between items-center transition-all duration-300"
+                                  className="text-[12px] sm:text-sm group border-[2px] border-black hover:bg-white bg-[#FEB516] hover:text-black text-black px-5 py-2 rounded-xl font-medium flex gap-2 justify-between items-center transition-all duration-300"
                                 >
-                                  <span className="mr-3 text-sm">Visiter le site</span>
+                                 Visiter le site
                                   <div className="border-l group-hover:border-black border-black py-2">
                                     <div className="ml-3 w-5 h-5 flex items-center justify-center">
                                       <CircleArrowRight className="transition-transform duration-500 transform group-hover:rotate-180" />
@@ -275,8 +275,8 @@ export function Services() {
                     transition={{ duration: 0.3 }}
                   >
 
-                    <div className="flex items-center gap-4 ">
-                      <h2 className="w-full text-3xl text-left font-semibold ">
+                    <div className="flex items-center gap-4 mb-4">
+                      <h2 className="w-full text-2xl md:text-3xl  text-left font-semibold ">
                         {selectedSolution.title}
                       </h2>
                       <button
@@ -288,7 +288,7 @@ export function Services() {
                       </button>
                     </div>
 
-                    <p className="text-sm py-6 whitespace-pre-line text-justify-optimized border-b border-black">{selectedSolution.description}</p>
+                    <p className="text-sm py-4 whitespace-pre-line text-justify-optimized border-b border-black">{selectedSolution.description}</p>
                     <div className="pt-6 flex flex-wrap gap-3 justify-center sm:justify-start">
                       <a
                         href={selectedSolution.siteUrl}
