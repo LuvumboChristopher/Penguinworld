@@ -138,7 +138,7 @@ export function ContentSection() {
                 borderColor: activeIndex === 1 ? "#feb516" : "black",
               }}
             >
-              <h3 className="font-semibold text-md xl:text-lg mb-3">L'engagement terrain</h3>
+              <h3 className="font-semibold text-md xl:text-lg mb-3">L&apos;engagement terrain</h3>
               <p
                 className="text-muted-foreground text-sm sm:text-[13px] xl:text-sm max-w-xl mr-auto"
                 dangerouslySetInnerHTML={{
@@ -160,7 +160,7 @@ export function ContentSection() {
                 borderColor: activeIndex === 2 ? "#feb516" : "black",
               }}
             >
-              <h3 className="font-semibold text-md xl:text-lg mb-3">Une passion pour l'entrepreneuriat</h3>
+              <h3 className="font-semibold text-md xl:text-lg mb-3">Une passion pour l&apos;entrepreneuriat</h3>
               <p
                 className="text-muted-foreground text-sm sm:text-[13px] xl:text-sm max-w-xl mr-auto"
                 dangerouslySetInnerHTML={{
