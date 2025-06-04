@@ -5,7 +5,7 @@ import Image from "next/image"
 export function IntroSection() {
   return (
     <section className="relative">
-      <div className="w-full pt-8 lg:max-w-[90%] 2xl:max-w-[75%] mx-auto flex flex-col lg:flex-row gap-10 lg:gap-12 xl:gap-20 items-center">
+      <div className="w-full pt-8 lg:pt-0 lg:max-w-[90%] 2xl:max-w-[75%] mx-auto flex flex-col lg:flex-row gap-10 lg:gap-12 xl:gap-20 items-center">
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -73,7 +73,7 @@ export function IntroSection() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="relative w-full h-[220px] sm:h-[180px] lg:h-[825px] lg:h-[735px] lg:w-[45%] overflow-hidden  lg:border-l-2 lg:border-r-2 border-black cursor-pointer duration-300"
+          className="relative border-b border-white w-full h-[175px] sm:h-[220px] lg:h-[825px] lg:h-[735px] lg:w-[45%] overflow-hidden lg:border-b-0 lg:border-l-2 lg:border-r-2 lg:border-black cursor-pointer duration-300"
         >
 
           <motion.div
@@ -84,7 +84,7 @@ export function IntroSection() {
             className="absolute bottom-0 inset-0 lg:hidden flex items-center gap-6 mr-auto z-10 "
           >
             <hr className="border-t border-gray-300 my-8" />
-            <blockquote className="max-w-xl mr-auto italic text-sm md:text-md text-white leading-relaxed relative md:pl-6 before:absolute before:left-0 before:top-0 before:text-6xl before:text-white/50 before:content-['“'] before:-translate-y-2">
+            <blockquote className="max-w-xl mr-auto italic text-sm md:text-base  text-white leading-relaxed relative md:pl-6 before:absolute before:left-0 before:top-0 before:text-6xl before:text-white/50 before:content-['“'] before:-translate-y-2">
               Le plus beau voyage, c&apos;est celui qu&apos;on n&apos;a pas encore fait.<br />— Loïck Peyron
             </blockquote>
           </motion.div>
@@ -93,10 +93,10 @@ export function IntroSection() {
             src="/images/nous-sommes.jpg"
             alt="À propos de PenguinWorld"
             fill
-            className="object-cover object-[center_65%] sm:object-[center_80%]"
+            className="object-cover object-[center_70%] sm:object-[center_80%] md:object-[center_90%]"
             priority
           />
-          <div className="absolute inset-0 bg-black/75 lg:hidden z-0" />
+          <div className="absolute inset-0 bg-black/80 lg:hidden z-0" />
         </motion.div>
       </div>
     </section>
