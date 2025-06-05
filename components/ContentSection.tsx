@@ -95,7 +95,7 @@ export function ContentSection() {
               </p>
             </div>
             <div className="pt-8">
-              <blockquote className="font-normal border-b-4 pb-4 sm:border-b-0 sm:pb-0 sm:border-l-8 sm:pl-4 italic text-sm sm:text-[12px] md:text-[15px] text-muted-foreground">
+              <blockquote className="font-light border-b-4 pb-4 sm:border-b-0 sm:pb-0 sm:border-l-8 sm:pl-4 italic text-sm sm:text-[12px] md:text-[15px] text-muted-foreground">
                 <strong className="font-bold text-black">Le Progrès</strong> : &quot;Grâce à Resaneo, sa plateforme de réservations de vols pour
                 les agences de voyages, Raphaël Torro est cette année en tête de notre palmarès des jeunes patrons du Rhône par
                 chiffre d&apos;affaires.&quot;

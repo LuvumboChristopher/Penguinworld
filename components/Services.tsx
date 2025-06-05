@@ -221,7 +221,7 @@ export function Services() {
                                 <button
                                   onClick={() => openModal(solution)}
                                   className={`font-light w-full text-[12px] sm:text-sm 
-                                group border-[2px] rounded-xl px-5 py-2 font-medium flex gap-2 justify-between items-center transition-all duration-300 border-black bg-white text-black hover:border-white hover:bg-transparent hover:text-white`}
+                                group border-[2px] rounded-xl px-5 py-2 flex gap-2 justify-between items-center transition-all duration-300 border-black bg-white text-black hover:border-white hover:bg-transparent hover:text-white`}
                                 >
                                   Plus d&apos;infos
                                   <div
@@ -238,7 +238,7 @@ export function Services() {
                                   href={solution.siteUrl}
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                  className="font-light text-[12px] sm:text-sm group border-[2px] border-black hover:bg-white bg-[#FEB516] hover:text-black text-black px-5 py-2 rounded-xl font-medium flex gap-2 justify-between items-center transition-all duration-300"
+                                  className="font-light text-[12px] sm:text-sm group border-[2px] border-black hover:bg-white bg-[#FEB516] hover:text-black text-black px-5 py-2 rounded-xl flex gap-2 justify-between items-center transition-all duration-300"
                                 >
                                   Visiter le site
                                   <div className="border-l group-hover:border-black border-black py-2">
