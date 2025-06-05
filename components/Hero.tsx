@@ -41,7 +41,7 @@ export function HeroSection() {
                   letterSpacing: "-0.1em",
                   textShadow: "3px 3px 6px rgba(0,0,0,0.6)",
                 }}
-                className="text-[clamp(2.5rem,10vw,5rem)] text-white"
+                className="text-[clamp(2.5rem,8vw,4.5rem)] text-white"
               >
                 Pengu
               </h2>
@@ -57,7 +57,7 @@ export function HeroSection() {
                   letterSpacing: "-0.1em",
                   textShadow: "3px 3px 6px rgba(0,0,0,0.6)",
                 }}
-                className="text-[clamp(2.5rem,10vw,5rem)] -mx-1 sm:-mx-2 z-10 text-white"
+                className="text-[clamp(2.5rem,10vw,4.5rem)] -mx-1 sm:-mx-2 z-10 text-white"
               >
                 n
               </h2>
@@ -67,7 +67,7 @@ export function HeroSection() {
                   letterSpacing: "-0.1em",
                   textShadow: "3px 3px 6px rgba(0,0,0,0.6)",
                 }}
-                className="text-[clamp(2.5rem,10vw,5rem)] text-white xl:outlined-text"
+                className="text-[clamp(2.5rem,8vw,4.5rem)] text-white xl:outlined-text"
               >
                 World
               </h2>
