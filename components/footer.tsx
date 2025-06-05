@@ -14,17 +14,17 @@ export function Footer() {
   return (
     <footer className="bg-black text-white ">
       <div className=" 2xl:max-w-[90%] mx-auto flex flex-col xl:flex-row justify-center border-t-2 border-b-2 border-black">
-        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between xl:flex-col xl:items-start xl:gap-10 space-y-4 sm:space-y-0 p-10 xl:p-20 xl:py-20 xl:w-1/3">
+        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between xl:flex-col xl:items-start xl:gapx-10 py-7 space-y-4 sm:space-y-0 px-10 py-7 xl:p-20 xl:py-20 xl:w-1/3 bg-[#FFAC34] text-black sm:bg-black sm:text-white ">
           <div className="flex flex-col items-center sm:flex-col sm:justify-start sm:items-start">
             <div className="group cursor-pointer flex items-center">
               <img
                 src="/favicon-32x32.png"
                 alt="Logo PenguinWorld"
-                className="h-auto object-contain w-auto max-h-[clamp(0.75rem,5vw,2rem)]"
+                className="h-auto object-contain w-auto max-h-[clamp(1.7rem,5vw,2rem)]"
               />
               <h2
                 style={{ letterSpacing: "-0.1em" }}
-                className="text-[clamp(0.75rem,5vw,2rem)] flex items-center group-hover:text-[#FFAC34] transition duration-300 cursor-pointer"
+                className="text-[clamp(1.7rem,5vw,2rem)] flex items-center group-hover:text-white sm:group-hover:text-[#FFAC34] transition duration-300 cursor-pointer"
               >
                 PenguinWorld
               </h2>
@@ -72,7 +72,7 @@ export function Footer() {
           </div>
         </div>
         <div className="xl:w-2/3 md:grid grid-cols-3  md:border-t-2 xl:border-t-0">
-          <div className="w-full p-10 xl:border-l-2 border-white md:border-r-2 md:py-20 ">
+          <div className="w-full px-10 py-7 xl:border-l-2 border-white md:border-r-2 md:py-20">
             <h3 className="mb-4 flex items-center gap-2 text-xl">
               <FaBuilding className="text-sm text-primary" />
               Entreprise
@@ -129,7 +129,7 @@ export function Footer() {
               </li>
             </ul>
           </div>
-          <div className="w-full p-10 md:border-r-2 md:py-20 ">
+          <div className="w-full px-10 py-7 md:border-r-2 md:py-20 ">
             <h3 className="mb-4 flex items-center gap-2 text-xl">
               <FaGavel className="text-sm text-primary" />
               Légal
@@ -186,7 +186,7 @@ export function Footer() {
               </li>
             </ul>
           </div>
-          <div className="w-full p-10 xl:pr-20 2xl:pr-10 md:py-20 bg-white text-black ">
+          <div className="w-full px-10 py-7 xl:pr-20 2xl:pr-10 md:py-20 bg-white text-black ">
             <h3 className="mb-4 flex items-center gap-2 text-xl">
               <FaHeadset className="text-sm text-primary" />
               Support
@@ -245,7 +245,7 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <div className="font-light w-full bg-black md:bg-white md:text-black text-center text-[13px] sm:text-sm  py-8 md:py-4 md:border-t-2 border-white">
+      <div className="flex flex-col s:block font-light w-full bg-black md:bg-white md:text-black text-center text-[13px] sm:text-sm py-[20px] s:py-8 md:py-4 md:border-t-2 border-white">
         Réalisation et conception par 🚀
         <Link
           className="font-normal px-2 hover:text-[#feb516] transition"
