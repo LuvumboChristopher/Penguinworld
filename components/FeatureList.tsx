@@ -41,7 +41,7 @@ export function FeatureList() {
 
   return (
     <section
-      className="py-8 lg:py-12 2xl:h-[29vh] border-t-4 lg:border-t-0 flex items-center bg-black text-white scroll-mt-[-4px] lg:scroll-mt-0"
+      className="py-8 lg:py-12 xl:h-[27vh]  2xl:h-[29vh] border-t-2 flex items-center bg-black text-white scroll-mt-[-4px] lg:scroll-mt-0"
       ref={ref}
     >
       <div className="container mx-auto">

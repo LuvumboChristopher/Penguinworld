@@ -12,7 +12,7 @@ export function HeroSection() {
   }, []);
 
   return (
-    <section className="relative [height:calc(100vh-280px)] sm:h-screen 2xl:h-[71vh] overflow-hidden">
+    <section className="relative [height:calc(100vh-280px)] sm:h-screen xl:h-[73vh] 2xl:h-[71vh] overflow-hidden">
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
         src="/videos/hero.mp4"
@@ -21,7 +21,7 @@ export function HeroSection() {
         loop
         playsInline
       />
-      <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-70" />
+      <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60" />
 
       <motion.div
         initial={{ opacity: 0, y: 30 }}
