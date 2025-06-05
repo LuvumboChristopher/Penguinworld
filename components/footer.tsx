@@ -13,7 +13,7 @@ import Link from "next/link";
 export function Footer() {
   return (
     <footer className="bg-black text-white ">
-      <div className=" 2xl:max-w-[90%] mx-auto flex flex-col-reverse sm:flex-col xl:flex-row justify-center ">
+      <div className=" 2xl:max-w-[90%] mx-auto flex flex-col-reverse sm:flex-col xl:flex-row justify-center border-t border-b border-black">
         <div className="border-t-2 border-b-2 border-black flex flex-col sm:flex-row sm:items-end sm:justify-between xl:flex-col xl:items-start xl:gapx-10 py-7 space-y-4 sm:space-y-0 px-10 py-7 xl:p-20 xl:py-20 xl:w-1/3 bg-[#feb516] text-black sm:bg-black sm:text-white ">
           <div className="flex flex-col items-center sm:flex-col sm:justify-start sm:items-start">
             <div className="group cursor-pointer flex items-center">
@@ -77,7 +77,7 @@ export function Footer() {
               <FaBuilding className="text-sm text-primary" />
               Entreprise
             </h3>
-            <div className="w-[24px] h-[2px] w-full bg-white mb-10" />
+            <div className="w-[20px] sm:w-[24px] h-[2px] w-full bg-white mb-6 sm:mb-10" />
             <ul className="w-max space-y-1">
               <li>
                 <Link
@@ -134,7 +134,7 @@ export function Footer() {
               <FaGavel className="text-sm text-primary" />
               Légal
             </h3>
-            <div className="w-[24px] h-[2px] w-full bg-white mb-10" />
+            <div className="w-[20px] sm:w-[24px] h-[2px] w-full bg-white mb-6 sm:mb-10" />
             <ul className="space-y-1">
               <li>
                 <Link
@@ -191,7 +191,7 @@ export function Footer() {
               <FaHeadset className="text-sm text-primary" />
               Support
             </h3>
-            <div className="w-[24px] h-[2px] bg-black w-full mb-10" />
+            <div className="w-[20px] sm:w-[24px] h-[2px] bg-black w-full mb-6 sm:mb-10" />
             <ul className="space-y-1">
               <li>
                 <Link
