@@ -62,7 +62,7 @@ export function IntroSection() {
             className="hidden lg:block flex items-center gap-6 mr-auto"
           >
             <hr className="hidden lg:block border-t border-gray-300 my-8" />
-            <blockquote className=" max-w-xl italic text-sm md:text-base  text-gray-700 leading-relaxed relative pl-6 before:absolute before:left-0 before:top-0 before:text-6xl before:text-gray-300 before:content-['“'] before:-translate-y-2">
+            <blockquote className=" max-w-xl italic text-sm md:text-base  text-gray-700 leading-relaxed relative pl-6 before:absolute before:-left-2 before:top-0 before:text-6xl before:text-gray-300 before:content-['“'] before:-translate-y-2">
               Le plus beau voyage, c&apos;est celui qu&apos;on n&apos;a pas encore fait.<br />— Loïck Peyron
             </blockquote>
           </motion.div>
