@@ -83,7 +83,7 @@ export function IntroSection() {
             transition={{ delay: 0.4, duration: 0.6 }}
             className="absolute inset-0 lg:hidden flex items-center justify-center z-10"
           >
-            <blockquote className="relative max-w-xl italic text-sm md:text-base text-center text-white leading-relaxed 
+            <blockquote className="relative max-w-[85vw] italic text-sm md:text-base text-center text-white leading-relaxed 
     before:absolute before:-left-5 before:top-0 before:text-6xl before:text-white/50 before:content-['“'] before:-translate-y-2
     after:absolute after:right-0 after:bottom-0 after:text-6xl after:text-white/50 after:content-['”'] after:translate-y-2">
               Le plus beau voyage, c&apos;est celui qu&apos;on n&apos;a pas encore fait.<br />— Loïck Peyron
