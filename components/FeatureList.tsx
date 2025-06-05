@@ -7,7 +7,7 @@ export function FeatureList() {
     {
       title: "1. Innovation responsable",
       description:
-        "Chez Pinguen World, l'innovation ne se fait jamais au détriment de l'humain. Chaque solution pensée est durable, éthique et utile, pour bâtir un avenir numérique plus sain.",
+        "Chez Penguin World, l'innovation ne se fait jamais au détriment de l'humain. Chaque solution pensée est durable, éthique et utile, pour bâtir un avenir numérique plus sain.",
     },
     {
       title: "2. Engagement collectif",

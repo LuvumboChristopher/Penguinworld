@@ -73,7 +73,7 @@ export function IntroSection() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="relative border-b border-white w-full h-[175px] sm:h-[220px] lg:h-[825px] lg:h-[735px] lg:w-[45%] overflow-hidden lg:border-b-0 lg:border-l-2 lg:border-r-2 lg:border-black cursor-pointer duration-300"
+          className="relative border-b border-white w-full h-[175px] sm:h-[220px] lg:h-[825px] xl:h-[735px] lg:w-[45%] overflow-hidden lg:border-b-0 lg:border-l-2 lg:border-r-2 lg:border-black cursor-pointer duration-300"
         >
 
           <motion.div
@@ -93,7 +93,7 @@ export function IntroSection() {
             src="/images/nous-sommes.jpg"
             alt="À propos de PenguinWorld"
             fill
-            className="object-cover object-[center_70%] sm:object-[center_80%] md:object-[center_90%]"
+            className="object-cover object-[center_70%] sm:object-[center_80%] md:object-[center_73%]"
             priority
           />
           <div className="absolute inset-0 bg-black/80 lg:hidden z-0" />
