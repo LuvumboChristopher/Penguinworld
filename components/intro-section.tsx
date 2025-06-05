@@ -73,7 +73,7 @@ export function IntroSection() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="relative border-b border-white w-full h-[175px]  lg:h-[825px] xl:h-[735px] lg:w-[45%] overflow-hidden lg:border-b-0 lg:border-l-2 lg:border-r-2 lg:border-black cursor-pointer duration-300"
+          className="relative border-b border-white w-full h-[205px]  lg:h-[825px] xl:h-[735px] lg:w-[45%] overflow-hidden lg:border-b-0 lg:border-l-2 lg:border-r-2 lg:border-black cursor-pointer duration-300"
         >
 
           <motion.div
