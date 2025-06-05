@@ -13,8 +13,8 @@ import Link from "next/link";
 export function Footer() {
   return (
     <footer className="bg-black text-white ">
-      <div className=" 2xl:max-w-[90%] mx-auto flex flex-col xl:flex-row justify-center border-t-2 border-b-2 border-black">
-        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between xl:flex-col xl:items-start xl:gapx-10 py-7 space-y-4 sm:space-y-0 px-10 py-7 xl:p-20 xl:py-20 xl:w-1/3 bg-[#FFAC34] text-black sm:bg-black sm:text-white ">
+      <div className=" 2xl:max-w-[90%] mx-auto flex flex-col-reverse sm:flex-col xl:flex-row justify-center ">
+        <div className="border-t-2 border-b-2 border-black flex flex-col sm:flex-row sm:items-end sm:justify-between xl:flex-col xl:items-start xl:gapx-10 py-7 space-y-4 sm:space-y-0 px-10 py-7 xl:p-20 xl:py-20 xl:w-1/3 bg-[#feb516] text-black sm:bg-black sm:text-white ">
           <div className="flex flex-col items-center sm:flex-col sm:justify-start sm:items-start">
             <div className="group cursor-pointer flex items-center">
               <img
@@ -24,7 +24,7 @@ export function Footer() {
               />
               <h2
                 style={{ letterSpacing: "-0.1em" }}
-                className="text-[clamp(1.7rem,5vw,2rem)] flex items-center group-hover:text-white sm:group-hover:text-[#FFAC34] transition duration-300 cursor-pointer"
+                className="text-[clamp(1.7rem,5vw,2rem)] flex items-center group-hover:text-white sm:group-hover:text-[#feb516] transition duration-300 cursor-pointer"
               >
                 PenguinWorld
               </h2>
