@@ -24,7 +24,7 @@ export function Footer() {
               />
               <h2
                 style={{ letterSpacing: "-0.1em" }}
-                className="text-[clamp(1.7rem,5vw,2rem)] flex items-center group-hover:text-white sm:group-hover:text-[#feb516] transition duration-300 cursor-pointer"
+                className="text-[clamp(1.7rem,5vw,1.7rem)] flex items-center group-hover:text-white sm:group-hover:text-[#feb516] transition duration-300 cursor-pointer"
               >
                 PenguinWorld
               </h2>
