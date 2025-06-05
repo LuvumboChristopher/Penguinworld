@@ -88,15 +88,15 @@ export function ContentSection() {
                 alt="Raphaël Torro"
                 className="w-24 h-24 md:hidden xl:block rounded-full object-cover border-4 border-gray-300"
               />
-              <p className="text-muted-foreground text-center sm:text-left text-sm lg:text-base xl:text-justify-optimized lg:text-base">
+              <p className="font-light text-muted-foreground text-center sm:text-left text-sm lg:text-base text-justify-optimized lg:text-base">
                 Je suis Raphaël Torro, Président de VLC Travel et fondateur de la plateforme Resaneo. Depuis plusieurs années,
                 je m&apos;investis dans la transformation du secteur du tourisme. Comprendre finement le marché, innover et accompagner
                 les professionnels du voyage : voilà ce qui guide chacune de mes actions.
               </p>
             </div>
             <div className="pt-8">
-              <blockquote className="border-b-4 pb-4 sm:border-b-0 sm:pb-0 sm:border-l-8 sm:pl-4 italic text-sm sm:text-[12px] md:text-[15px] text-muted-foreground">
-                <strong className="font-black text-black">Le Progrès</strong> : &quot;Grâce à Resaneo, sa plateforme de réservations de vols pour
+              <blockquote className="font-normal border-b-4 pb-4 sm:border-b-0 sm:pb-0 sm:border-l-8 sm:pl-4 italic text-sm sm:text-[12px] md:text-[15px] text-muted-foreground">
+                <strong className="font-bold text-black">Le Progrès</strong> : &quot;Grâce à Resaneo, sa plateforme de réservations de vols pour
                 les agences de voyages, Raphaël Torro est cette année en tête de notre palmarès des jeunes patrons du Rhône par
                 chiffre d&apos;affaires.&quot;
               </blockquote>
@@ -119,7 +119,7 @@ export function ContentSection() {
             >
               <h3 className="font-semibold text-md xl:text-lg mb-3">Une vision à 360° du secteur</h3>
               <p
-                className="text-muted-foreground text-sm sm:text-[13px] xl:text-sm max-w-xl mr-auto"
+                className="font-light text-muted-foreground text-sm sm:text-[13px] xl:text-sm max-w-xl mr-auto"
                 dangerouslySetInnerHTML={{
                   __html:
                     "En tant qu&apos;entrepreneur actif, je vous apporte une vision actuelle et à 360° du marché du tourisme. Mon objectif est de faire évoluer le secteur avec pragmatisme et modernité.",
@@ -141,7 +141,7 @@ export function ContentSection() {
             >
               <h3 className="font-semibold text-md xl:text-lg mb-3">L&apos;engagement terrain</h3>
               <p
-                className="text-muted-foreground text-sm sm:text-[13px] xl:text-sm max-w-xl mr-auto"
+                className="font-light text-muted-foreground text-sm sm:text-[13px] xl:text-sm max-w-xl mr-auto"
                 dangerouslySetInnerHTML={{
                   __html:
                     "Je suis engagé au quotidien auprès des professionnels du voyage. En tant que membre du Comité des adhésions de l&apos;APST et délégué régional, j&apos;accompagne les futurs acteurs du tourisme avec énergie et réalisme.",
@@ -163,7 +163,7 @@ export function ContentSection() {
             >
               <h3 className="font-semibold text-md xl:text-lg mb-3">Une passion pour l&apos;entrepreneuriat</h3>
               <p
-                className="text-muted-foreground text-sm sm:text-[13px] xl:text-sm max-w-xl mr-auto"
+                className="font-light text-muted-foreground text-sm sm:text-[13px] xl:text-sm max-w-xl mr-auto"
                 dangerouslySetInnerHTML={{
                   __html:
                     "Je suis un entrepreneur passionné. J&apos;aime aller au bout des dossiers, les traiter avec rigueur et humanité. Mon approche repose sur l&apos;écoute et l&apos;efficacité.",

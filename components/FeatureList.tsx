@@ -58,7 +58,7 @@ export function FeatureList() {
               className="text-left"
             >
               <h2 className="text-lg md:text-xl font-semibold mb-3 md:mb-6">{feature.title}</h2>
-              <p className="text-muted-foreground text-sm text-justify-optimized">
+              <p className="text-muted-foreground text-sm text-justify-optimized font-light">
                 {feature.description}
               </p>
             </motion.div>

@@ -39,16 +39,16 @@ export function IntroSection() {
           </div>
 
           <div className="space-y-6">
-            <p className="text-sm md:text-base text-justify-optimized">
+            <p className="font-light text-sm md:text-base text-justify-optimized">
               Le groupe PenguinWorld et sa large palette de services mise à disposition des professionnels et des voyageurs, se situe au cœur de cette réalité, nous en avons fait notre ADN, notre mission première, et celle de toutes nos équipes d&apos;experts disponibles et passionnés qui contribuent à diffuser ce souffle de concorde et paix à travers le monde.
             </p>
-            <p className="text-sm md:text-base text-justify-optimized">
+            <p className="font-light text-sm md:text-base text-justify-optimized">
               Un voyage réussi est celui où toute la chaine humaine a été au rendez-vous, et qui aura permis au voyageur de gagner les espaces de liberté et de découverte auxquels il aspire.
             </p>
-            <p className="text-sm md:text-base text-justify-optimized">
+            <p className="font-light text-sm md:text-base text-justify-optimized">
               Tous unis, portés par nos passions et nos rêves, nous souhaitons vous faire partager cette noble mission : rapprocher les peuples, et contribuer à diffuser la paix, partout sur les chemins, les routes, les mers, et les océans de notre merveilleuse Terre.
             </p>
-            <p className="text-sm md:text-base text-justify-optimized">
+            <p className="font-light text-sm md:text-base text-justify-optimized">
               N&apos;hésitez jamais à partir loin, au delà de toutes les mers, toutes les frontières, tous les pays, toutes les croyances.
             </p>
           </div>

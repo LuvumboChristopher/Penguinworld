@@ -8,7 +8,6 @@ import {
   FaHeadset,
 } from "react-icons/fa";
 
-import Image from "next/image";
 import Link from "next/link";
 
 export function Footer() {
@@ -17,13 +16,21 @@ export function Footer() {
       <div className=" 2xl:max-w-[90%] mx-auto flex flex-col xl:flex-row justify-center border-t-2 border-b-2 border-black">
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between xl:flex-col xl:items-start xl:gap-10 space-y-4 sm:space-y-0 p-10 xl:p-20 xl:py-20 xl:w-1/3">
           <div className="sm:flex sm:flex-col sm:justify-start sm:items-start">
-             <h2
-              style={{ letterSpacing: "-0.1em" }}
-              className="sm:outlined-text text-[clamp(0.75rem,5vw,2rem)] xl:-mt- "
-            >
-              PenguinWorld
-            </h2>
-            <p className="text-muted-foreground text-sm mt-4">
+            <div className="flex items-center">
+              <img
+                src="/favicon-32x32.png"
+                alt="Logo PenguinWorld"
+                className="h-auto object-contain w-auto max-h-[clamp(0.75rem,5vw,2rem)]"
+              />
+              <h2
+                style={{ letterSpacing: "-0.1em" }}
+                className="text-[clamp(0.75rem,5vw,2rem)] flex items-center"
+              >
+                PenguinWorld
+              </h2>
+            </div>
+
+            <p className="font-light text-muted-foreground text-sm mt-4">
               73 T rue Francis de Pressensé, 69100 Villeurbanne, France
               <br />
               SIREN : 819 192 964
@@ -75,7 +82,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-muted-foreground hover:text-[#feb516] text-sm"
+                  className="font-light text-muted-foreground hover:text-[#feb516] text-sm"
                 >
                   Accueil
                 </Link>
@@ -83,7 +90,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-muted-foreground hover:text-[#feb516] text-sm"
+                  className="font-light text-muted-foreground hover:text-[#feb516] text-sm"
                 >
                   À propos
                 </Link>
@@ -91,7 +98,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-muted-foreground hover:text-[#feb516] text-sm"
+                  className="font-light text-muted-foreground hover:text-[#feb516] text-sm"
                 >
                   Services
                 </Link>
@@ -99,7 +106,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-muted-foreground hover:text-[#feb516] text-sm"
+                  className="font-light text-muted-foreground hover:text-[#feb516] text-sm"
                 >
                   Notre équipe
                 </Link>
@@ -107,7 +114,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-muted-foreground hover:text-[#feb516] text-sm"
+                  className="font-light text-muted-foreground hover:text-[#feb516] text-sm"
                 >
                   Carrières
                 </Link>
@@ -115,7 +122,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-muted-foreground hover:text-[#feb516] text-sm"
+                  className="font-light text-muted-foreground hover:text-[#feb516] text-sm"
                 >
                   Blog
                 </Link>
@@ -132,7 +139,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-muted-foreground hover:text-[#feb516] text-sm"
+                  className="font-light text-muted-foreground hover:text-[#feb516] text-sm"
                 >
                   Conditions d&apos;utilisation
                 </Link>
@@ -140,7 +147,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-muted-foreground hover:text-[#feb516] text-sm"
+                  className="font-light text-muted-foreground hover:text-[#feb516] text-sm"
                 >
                   Politique de confidentialité
                 </Link>
@@ -148,7 +155,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-muted-foreground hover:text-[#feb516] text-sm"
+                  className="font-light text-muted-foreground hover:text-[#feb516] text-sm"
                 >
                   Politique de cookies
                 </Link>
@@ -156,7 +163,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-muted-foreground hover:text-[#feb516] text-sm"
+                  className="font-light text-muted-foreground hover:text-[#feb516] text-sm"
                 >
                   Mentions légales
                 </Link>
@@ -164,7 +171,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-muted-foreground hover:text-[#feb516] text-sm"
+                  className="font-light text-muted-foreground hover:text-[#feb516] text-sm"
                 >
                   Accord de traitement des données
                 </Link>
@@ -172,7 +179,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-muted-foreground hover:text-[#feb516] text-sm"
+                  className="font-light text-muted-foreground hover:text-[#feb516] text-sm"
                 >
                   Sécurité des données
                 </Link>
@@ -189,7 +196,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-muted-foreground hover:text-[#feb516] text-sm"
+                  className="font-light text-muted-foreground hover:text-[#feb516] text-sm"
                 >
                   Centre d&apos;aide
                 </Link>
@@ -197,7 +204,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-muted-foreground hover:text-[#feb516] text-sm"
+                  className="font-light text-muted-foreground hover:text-[#feb516] text-sm"
                 >
                   FAQ
                 </Link>
@@ -205,7 +212,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-muted-foreground hover:text-[#feb516] text-sm"
+                  className="font-light text-muted-foreground hover:text-[#feb516] text-sm"
                 >
                   Contact
                 </Link>
@@ -213,7 +220,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-muted-foreground hover:text-[#feb516] text-sm"
+                  className="font-light text-muted-foreground hover:text-[#feb516] text-sm"
                 >
                   Support technique
                 </Link>
@@ -221,7 +228,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-muted-foreground hover:text-[#feb516] text-sm"
+                  className="font-light text-muted-foreground hover:text-[#feb516] text-sm"
                 >
                   Communauté
                 </Link>
@@ -229,7 +236,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-muted-foreground hover:text-[#feb516] text-sm"
+                  className="font-light text-muted-foreground hover:text-[#feb516] text-sm"
                 >
                   Statut du service
                 </Link>
@@ -238,10 +245,10 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <div className="w-full bg-black md:bg-white md:text-black text-center text-[13px] sm:text-sm py-4 md:border-t-2 border-white">
+      <div className="font-light w-full bg-black md:bg-white md:text-black text-center text-[13px] sm:text-sm py-4 md:border-t-2 border-white">
         Réalisation et conception par 🚀
         <Link
-          className="px-2 hover:text-[#feb516] transition"
+          className="font-normal px-2 hover:text-[#feb516] transition"
           href="https://www.linkedin.com/in/christopher-luvumbo/"
           target="_blank"
           rel="noopener noreferrer"

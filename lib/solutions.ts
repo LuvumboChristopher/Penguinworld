@@ -21,7 +21,7 @@ export const solutions: Solution[] = [
         siteUrl: "https://www.resaneo.com",
         extraLinks: [
             { label: "Site Grand Public", url: "https://www.resaneo.fr" },
-            { label: "Espace recrutement", url: "https://www.resaneo.com/espace-recrutement" }
+            { label: "Espace recrutement", url: "https://careers.werecruit.io/fr/vlc-travel--resaneo" }
         ]
     },
     {
@@ -34,7 +34,7 @@ export const solutions: Solution[] = [
         siteUrl: "https://www.quartier-libre.pro",
         extraLinks: [
             { label: "Site Grand Public", url: "https://www.quartier-libre.fr" },
-            { label: "Espace recrutement", url: "https://www.quartier-libre.fr/espace-recrutement" }
+            { label: "Espace recrutement", url: "https://careers.werecruit.io/fr/quartier-libre" }
         ]
     },
     {
@@ -46,7 +46,7 @@ export const solutions: Solution[] = [
         , infoUrl: "#",
         siteUrl: "https://www.speedmedia.fr",
         extraLinks: [
-            { label: "Espace recrutement", url: "https://www.speedmedia.fr/espace-recrutement" }
+            { label: "Espace recrutement", url: "https://careers.werecruit.io/fr/speedmedia" }
         ]
     },
     {

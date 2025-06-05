@@ -213,14 +213,14 @@ export function Services() {
                             <div className="flex items-center text-left gap-4">
                               <h2 className="w-full text-2xl sm:text-3xl font-bold mb-3">{solution.title}</h2>
                             </div>
-                            <p className="text-sm text-justify-optimized  overflow-hidden text-ellipsis line-clamp-6">
+                            <p className="text-sm text-justify-optimized  overflow-hidden text-ellipsis line-clamp-6 font-light">
                               {solution.description}
                             </p>
                             <div className="w-full flex flex-col s:flex-row sm:flex-col lg:flex-row xl:flex-col   gap-4 pt-6">
                               <div className="w-full" >
                                 <button
                                   onClick={() => openModal(solution)}
-                                  className={`w-full text-[12px] sm:text-sm 
+                                  className={`font-light w-full text-[12px] sm:text-sm 
                                 group border-[2px] rounded-xl px-5 py-2 font-medium flex gap-2 justify-between items-center transition-all duration-300 border-black bg-white text-black hover:border-white hover:bg-transparent hover:text-white`}
                                 >
                                   Plus d&apos;infos
@@ -238,7 +238,7 @@ export function Services() {
                                   href={solution.siteUrl}
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                  className="text-[12px] sm:text-sm group border-[2px] border-black hover:bg-white bg-[#FEB516] hover:text-black text-black px-5 py-2 rounded-xl font-medium flex gap-2 justify-between items-center transition-all duration-300"
+                                  className="font-light text-[12px] sm:text-sm group border-[2px] border-black hover:bg-white bg-[#FEB516] hover:text-black text-black px-5 py-2 rounded-xl font-medium flex gap-2 justify-between items-center transition-all duration-300"
                                 >
                                   Visiter le site
                                   <div className="border-l group-hover:border-black border-black py-2">
@@ -288,15 +288,15 @@ export function Services() {
                       </button>
                     </div>
 
-                    <p className="text-sm py-4 whitespace-pre-line text-justify-optimized border-b border-black">{selectedSolution.description}</p>
+                    <p className="text-sm py-4 whitespace-pre-line text-justify-optimized border-b border-black font-light">{selectedSolution.description}</p>
                     <div className="pt-6 flex flex-wrap gap-3 justify-center sm:justify-start">
                       <a
                         href={selectedSolution.siteUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="group border-[2px] border-black hover:bg-white bg-[#FEB516]  hover:text-black text-black text-sm md:tex-[14.5px]  px-5 py-2 rounded-xl font-medium flex gap-2 justify-between items-center transition-all duration-300 w-full"
+                        className="group border-[2px] border-black hover:bg-white bg-[#FEB516]  hover:text-black text-black text-sm md:tex-[14.5px]  px-5 py-2 rounded-xl flex gap-2 justify-between items-center transition-all duration-300 w-full"
                       >
-                        <span className="mr-3">Visiter le site</span>
+                        <span className="mr-3 font-light">Visiter le site</span>
                         <div className="border-l group-hover:border-black border-black py-2">
                           <div className="ml-3 w-5 h-5 flex items-center justify-center">
                             <CircleArrowRight className="transition-transform duration-500 transform group-hover:rotate-180" />
@@ -310,9 +310,9 @@ export function Services() {
                             href={url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="group border-[2px] border-black hover:bg-white bg-black hover:text-black text-white text-sm md:tex-[14.5px] px-5 py-2 rounded-xl font-medium flex gap-2 justify-between items-center transition-all duration-300 w-full"
+                            className="group border-[2px] border-black hover:bg-white bg-black hover:text-black text-white text-sm md:tex-[14.5px] px-5 py-2 rounded-xl flex gap-2 justify-between items-center transition-all duration-300 w-full"
                           >
-                            <span className="mr-3">{label}</span>
+                            <span className="mr-3 font-light">{label}</span>
                             <div className="border-l group-hover:border-black border-white py-2">
                               <div className="ml-3 w-5 h-5 flex items-center justify-center">
                                 <CircleArrowRight className="transition-transform duration-500 transform group-hover:rotate-180" />

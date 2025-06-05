@@ -1,4 +1,3 @@
-import Head from "next/head"
 import { HeroSection } from "@/components/Hero"
 import { IntroSection } from "@/components/intro-section"
 import { FeatureList } from "@/components/FeatureList"
@@ -10,11 +9,6 @@ import { Services } from "@/components/Services"
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>PenguinWorld - Services de voyage</title>
-        <meta name="description" content="Découvrez nos services de mise à disposition" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <ScrollToTop />
       <main>
         <HeroSection />

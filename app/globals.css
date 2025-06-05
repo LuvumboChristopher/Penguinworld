@@ -5,10 +5,65 @@
 
 @font-face {
   font-family: 'Lexend';
+  src: url('/fonts/Lexend-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lexend';
+  src: url('/fonts/Lexend-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lexend';
   src: url('/fonts/Lexend-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lexend';
+  src: url('/fonts/Lexend-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lexend';
+  src: url('/fonts/Lexend-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lexend';
+  src: url('/fonts/Lexend-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lexend';
+  src: url('/fonts/Lexend-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lexend';
+  src: url('/fonts/Lexend-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lexend';
+  src: url('/fonts/Lexend-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
 }
 
 @font-face {
@@ -46,8 +101,7 @@ small, h3 {
   text-justify: inter-word;
   hyphens: auto;
   line-height: 1.5;
-  word-spacing: 0.02em;
-  letter-spacing: 0.02em;
+  word-spacing: -0.02em;
 }
 
 .text-justify-optimized:last-of-type {
@@ -60,9 +114,6 @@ h1, h2, h4, h5, h6 {
   letter-spacing: -1px;
 
 }
-
-
-
 
 .outlined-text {
   color: transparent;
@@ -94,6 +145,12 @@ h1, h2, h4, h5, h6 {
     text-align: justify;
     text-justify: inter-word;
   }
+  .outlined-text {
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+  letter-spacing: -1px;
+}
+
 }
 
 
