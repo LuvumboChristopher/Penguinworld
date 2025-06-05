@@ -72,7 +72,7 @@ export function Footer() {
           </div>
         </div>
         <div className="xl:w-2/3 md:grid grid-cols-3  md:border-t-2 xl:border-t-0">
-          <div className="w-full px-10 py-7 xl:border-l-2 border-white md:border-r-2 md:py-20">
+          <div className="w-full px-10 py-7 xl:border-l-2 border-white md:border-r-2 md:py-20 sm:border-t md:border-t-0 md:border-t-0 border-white">
             <h3 className="mb-4 flex items-center gap-2 text-xl">
               <FaBuilding className="text-sm text-primary" />
               Entreprise
@@ -129,7 +129,7 @@ export function Footer() {
               </li>
             </ul>
           </div>
-          <div className="w-full px-10 py-7 md:border-r-2 md:py-20 ">
+          <div className="w-full px-10 py-7 md:border-r-2 md:py-20 border-t md:border-t-0 border-white">
             <h3 className="mb-4 flex items-center gap-2 text-xl">
               <FaGavel className="text-sm text-primary" />
               Légal
