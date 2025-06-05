@@ -15,8 +15,8 @@ export function Footer() {
     <footer className="bg-black text-white ">
       <div className=" 2xl:max-w-[90%] mx-auto flex flex-col xl:flex-row justify-center border-t-2 border-b-2 border-black">
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between xl:flex-col xl:items-start xl:gap-10 space-y-4 sm:space-y-0 p-10 xl:p-20 xl:py-20 xl:w-1/3">
-          <div className="sm:flex sm:flex-col sm:justify-start sm:items-start">
-            <div className="flex items-center">
+          <div className="flex flex-col items-center sm:flex-col sm:justify-start sm:items-start">
+            <div className="group cursor-pointer flex items-center">
               <img
                 src="/favicon-32x32.png"
                 alt="Logo PenguinWorld"
@@ -24,13 +24,13 @@ export function Footer() {
               />
               <h2
                 style={{ letterSpacing: "-0.1em" }}
-                className="text-[clamp(0.75rem,5vw,2rem)] flex items-center"
+                className="text-[clamp(0.75rem,5vw,2rem)] flex items-center group-hover:text-[#FFAC34] transition duration-300 cursor-pointer"
               >
                 PenguinWorld
               </h2>
             </div>
 
-            <p className="font-light text-muted-foreground text-sm mt-4">
+            <p className="text-center sm:text-left font-light text-muted-foreground text-sm mt-4">
               73 T rue Francis de Pressensé, 69100 Villeurbanne, France
               <br />
               SIREN : 819 192 964
@@ -40,7 +40,7 @@ export function Footer() {
               Dirigé par : Torro Raphael
             </p>
           </div>
-          <div className="pt-6 sm:pt-0 flex gap-6 justify-start sm:justify-end">
+          <div className="w-full pt-6 sm:pt-0 flex gap-6 justify-center sm:justify-end xl:justify-start">
             <a
               href="#"
               aria-label="Facebook"
@@ -245,7 +245,7 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <div className="font-light w-full bg-black md:bg-white md:text-black text-center text-[13px] sm:text-sm py-4 md:border-t-2 border-white">
+      <div className="font-light w-full bg-black md:bg-white md:text-black text-center text-[13px] sm:text-sm  py-8 md:py-4 md:border-t-2 border-white">
         Réalisation et conception par 🚀
         <Link
           className="font-normal px-2 hover:text-[#feb516] transition"

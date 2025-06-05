@@ -32,7 +32,7 @@ export function IntroSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ delay: 0.3, duration: 0.6 }}
-              className="text-muted-foreground text-sm sm:text-base xl:text-lg italic"
+              className="text-muted-foreground text-sm sm:text-base xl:text-md font-light italic"
             >
               Derrière chaque destination, une intention : rassembler, relier, inspirer.
             </motion.p>
@@ -73,7 +73,7 @@ export function IntroSection() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="relative border-b border-white w-full h-[175px] sm:h-[220px] lg:h-[825px] xl:h-[735px] lg:w-[45%] overflow-hidden lg:border-b-0 lg:border-l-2 lg:border-r-2 lg:border-black cursor-pointer duration-300"
+          className="relative border-b border-white w-full h-[175px]  lg:h-[825px] xl:h-[735px] lg:w-[45%] overflow-hidden lg:border-b-0 lg:border-l-2 lg:border-r-2 lg:border-black cursor-pointer duration-300"
         >
 
           <motion.div
@@ -81,10 +81,11 @@ export function IntroSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ delay: 0.4, duration: 0.6 }}
-            className="absolute bottom-0 inset-0 lg:hidden flex items-center gap-6 mr-auto z-10 "
+            className="absolute inset-0 lg:hidden flex items-center justify-center z-10"
           >
-            <hr className="border-t border-gray-300 my-8" />
-            <blockquote className="max-w-xl mr-auto italic text-sm md:text-base  text-white leading-relaxed relative md:pl-6 before:absolute before:left-0 before:top-0 before:text-6xl before:text-white/50 before:content-['“'] before:-translate-y-2">
+            <blockquote className="relative max-w-xl italic text-sm md:text-base text-center text-white leading-relaxed 
+    before:absolute before:-left-5 before:top-0 before:text-6xl before:text-white/50 before:content-['“'] before:-translate-y-2
+    after:absolute after:right-0 after:bottom-0 after:text-6xl after:text-white/50 after:content-['”'] after:translate-y-2">
               Le plus beau voyage, c&apos;est celui qu&apos;on n&apos;a pas encore fait.<br />— Loïck Peyron
             </blockquote>
           </motion.div>

@@ -1,46 +1,32 @@
-"use client"
+"use client";
 import { useState, useEffect } from "react";
 import { FaArrowUp } from "react-icons/fa";
 
 export function ScrollToTop() {
-    const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
-    useEffect(() => {
-        function toggleVisibility() {
-            if (window.scrollY > 300) {
-                setIsVisible(true);
-            } else {
-                setIsVisible(false);
-            }
-        }
-        window.addEventListener("scroll", toggleVisibility);
-        return () => window.removeEventListener("scroll", toggleVisibility);
-    }, []);
-
-    const scrollToTop = () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsVisible(window.scrollY > 300);
     };
 
-    return (
-        <>
-            {isVisible && (
-                <button
-                    onClick={scrollToTop}
-                    aria-label="Scroll to top"
-                    className="
-                        fixed bottom-[15px] sm:bottom-[50px] right-[15px] md:bottom-[54px] md:right-0 z-50
-                        p-3 rounded-xl sm:rounded-none
-                        bg-[#feb516]
-                        text-black
-                        border-2 border-black
-                        sm:border-r-0
-                        transition duration-300
-                        hover:text-white hover:bg-[#feb516]
-                    "
-                >
-                    <FaArrowUp className="w-6 h-6" />
-                </button>
-            )}
-        </>
-    );
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  if (!isVisible) return null;
+
+  return (
+    <button
+      onClick={scrollToTop}
+      aria-label="Scroll to top"
+      className="fixed bottom-5 right-4 md:bottom-[54px] md:right-0 z-[1010] flex h-10 w-10 items-center justify-center rounded-xl bg-[#feb516] text-black border border-black shadow-[inset_0_0_0_0.1rem_rgba(128,130,134,0.25)] transition duration-300 hover:bg-black hover:text-white hover:border-white md:rounded-none sm:border-r-0"
+    >
+      <FaArrowUp className="text-lg" />
+    </button>
+  );
 }

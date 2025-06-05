@@ -30,40 +30,50 @@ export function HeroSection() {
         className="relative z-10 container mx-auto h-full flex flex-col md:flex-row items-center justify-center gap-12 px-4"
       >
         <div className="space-y-8 max-w-2xl text-center text-white">
-          <div className="flex flex-col ">
-            <small className="text-[clamp(0.5rem,3vw,1.15rem)] font-bold tracking-tighter text-white -mb-3 md:-mb-7 z-30">
+          <div className="flex flex-col">
+            <small className="text-[clamp(0.5rem,3vw,1.15rem)] font-bold tracking-tighter text-white -mb-3 md:-mb-7 z-30 drop-shadow-xl">
               Bienvenue chez
             </small>
-            <div className="w-full justify-center flex  items-center  gap-2 sm:gap-3">
+
+            <div className="w-full justify-center flex items-center gap-2 sm:gap-3">
               <h2
-                style={{ letterSpacing: "-0.1em" }}
-                className=" text-[clamp(2.5rem,10vw,5rem)]"
+                style={{
+                  letterSpacing: "-0.1em",
+                  textShadow: "3px 3px 6px rgba(0,0,0,0.6)",
+                }}
+                className="text-[clamp(2.5rem,10vw,5rem)] text-white"
               >
                 Pengu
               </h2>
+
               <img
                 src="/android-chrome-512x512.png"
                 alt="Séparateur"
-                className="h-[clamp(0.6rem,8vw,3.8rem)] w-auto object-contain -mx-3  sm:-mx-5 z-20"
+                className="h-[clamp(0.6rem,8vw,3.8rem)] w-auto object-contain -mx-3 sm:-mx-5 z-20"
               />
 
-
               <h2
-                style={{ letterSpacing: "-0.1em" }}
-                className="text-[clamp(2.5rem,10vw,5rem)] -mx-1  sm:-mx-2 z-10"
+                style={{
+                  letterSpacing: "-0.1em",
+                  textShadow: "3px 3px 6px rgba(0,0,0,0.6)",
+                }}
+                className="text-[clamp(2.5rem,10vw,5rem)] -mx-1 sm:-mx-2 z-10 text-white"
               >
                 n
               </h2>
 
-
               <h2
-                style={{ letterSpacing: "-0.1em" }}
-                className="text-[clamp(2.5rem,10vw,5rem)] xl:outlined-text"
+                style={{
+                  letterSpacing: "-0.1em",
+                  textShadow: "3px 3px 6px rgba(0,0,0,0.6)",
+                }}
+                className="text-[clamp(2.5rem,10vw,5rem)] text-white xl:outlined-text"
               >
                 World
               </h2>
             </div>
           </div>
+
           <div>
             <small className="-mt-6 text-[14px] block text-center font-light">
               Connecter les professionnels et les voyageurs avec confort et confiance.

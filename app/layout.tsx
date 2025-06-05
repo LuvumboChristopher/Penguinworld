@@ -6,9 +6,6 @@ export const metadata: Metadata = {
   title: "PenguinWorld | Services et solutions pour voyageurs & aventuriers modernes",
   description:
     "Découvrez PenguinWorld : des solutions de voyage sur mesure pour les entreprises, les professionnels et les voyageurs exigeants. Organisation, flexibilité et expertise au service de vos déplacements.",
-  icons: {
-    icon: "/favicon.ico",
-  },
 };
 
 export default function RootLayout({
