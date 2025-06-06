@@ -5,7 +5,7 @@ import Image from "next/image"
 export function IntroSection() {
   return (
     <section className="relative">
-      <div className="w-full pt-8 lg:pt-0 lg:max-w-[90%] 2xl:max-w-[75%] mx-auto flex flex-col lg:flex-row gap-10 lg:gap-12 xl:gap-20 items-center">
+      <div className="w-full  pt-8 lg:pt-0 lg:max-w-[90%] 2xl:max-w-[75%] mx-auto flex flex-col lg:flex-row gap-10 lg:gap-12 xl:gap-20 items-center">
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}

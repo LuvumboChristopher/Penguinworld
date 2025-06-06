@@ -167,7 +167,7 @@ export function Services() {
             </div>
             <div
               ref={scrollRef}
-              className="flex overflow-x-auto gap-[1px] md:gap-4 snap-x snap-mandatory scrollbar-none"
+              className="flex overflow-x-auto gap-[1px] md:gap-6 snap-x snap-mandatory scrollbar-none"
               style={{ scrollSnapType: "x mandatory" }}
             >
               <AnimatePresence initial={false}>
@@ -188,7 +188,7 @@ export function Services() {
                       }}
                       className={`
                     flex-shrink-0 snap-start
-                    w-[100%] mr-6 lg:mr-0 lg:w-[447px] xl:w-[663px]  2xl:w-[707px]
+                    w-[100%] mr-6 lg:mr-0 lg:w-[447px] xl:w-[660px]  2xl:w-[49%]
                     shadow-sm rounded-2xl transition overflow-hidden border-2 border-black cursor-pointer duration-700 ${shouldLookActive ? "bg-black text-white" : ""}
                   `}
                       initial={{ opacity: 0, y: 10 }}

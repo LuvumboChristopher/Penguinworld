@@ -56,7 +56,7 @@ export function ContentSection() {
   }
 
   return (
-    <section className="relative p-6 sm:py-14 border-t-2 border-b-2 border-black">
+    <section className="relative  py-[5%] border-t-2 border-b-2 border-black">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: "url('/images/promovols-placeholder.jpg')" }}
@@ -68,7 +68,7 @@ export function ContentSection() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.1 }}
-        className="relative sm:container mx-auto max-w-6xl p-10 lg:p-12 rounded-3xl border-2 border-black bg-white bg-opacity-95"
+        className="relative container   p-10 lg:p-12 rounded-3xl border-2 border-black bg-white bg-opacity-95"
       >
         <div className="grid md:grid-cols-2 gap-12 xl:gap-16 items-start">
           <motion.div variants={itemVariants} className="space-y-4 md:space-y-8">
@@ -101,7 +101,6 @@ export function ContentSection() {
                 chiffre d&apos;affaires.&quot;
               </blockquote>
             </div>
-
           </motion.div>
 
           <div className="h-full flex flex-col justify-between gap-4 lg:gap-6">
