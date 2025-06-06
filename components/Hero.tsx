@@ -31,7 +31,7 @@ export function HeroSection() {
       >
         <div className="space-y-8 max-w-2xl text-center text-white">
           <div className="flex flex-col">
-            <small className="text-[clamp(0.5rem,3vw,1.15rem)] font-bold tracking-tighter text-white -mb-3 md:-mb-7 z-30 drop-shadow-xl">
+            <small className="text-[clamp(0.5rem,3vw,1.15rem)] font-bold tracking-tighter text-white -mb-3 md:-mb-7 z-30 drop-shadow-3xl">
               Bienvenue chez
             </small>
 

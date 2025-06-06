@@ -167,7 +167,7 @@ export function Services() {
             </div>
             <div
               ref={scrollRef}
-              className="flex overflow-x-auto gap-6 snap-x snap-mandatory scrollbar-none"
+              className="flex overflow-x-auto gap-[1px] md:gap-4 snap-x snap-mandatory scrollbar-none"
               style={{ scrollSnapType: "x mandatory" }}
             >
               <AnimatePresence initial={false}>
@@ -188,7 +188,7 @@ export function Services() {
                       }}
                       className={`
                     flex-shrink-0 snap-start
-                    w-[90vw] lg:w-[447px] xl:w-[663px]  2xl:w-[707px]
+                    w-[100%] mr-6 lg:mr-0 lg:w-[447px] xl:w-[663px]  2xl:w-[707px]
                     shadow-sm rounded-2xl transition overflow-hidden border-2 border-black cursor-pointer duration-700 ${shouldLookActive ? "bg-black text-white" : ""}
                   `}
                       initial={{ opacity: 0, y: 10 }}
@@ -198,12 +198,12 @@ export function Services() {
                       layout
                     >
                       <div className="flex flex-col sm:flex-row lg:flex-col xl:flex-row items-center">
-                        <div className="relative w-full h-[205px] sm:h-[465px] md:w-[50%] lg:w-full xl:w-[48.5%] lg:h-[240px] xl:h-[420px] rounded-lg overflow-hidden md:border-r-2 lg:border-0 xl:border-r-2 border-black">
+                        <div className="relative w-full h-[175px] sm:h-[465px] md:w-[50%] lg:w-full xl:w-[48.5%] lg:h-[240px] xl:h-[420px] rounded-lg overflow-hidden md:border-r-2 lg:border-0 xl:border-r-2 border-black">
                           <Image
                             src={solution.image}
                             alt={`${solution.title} image`}
                             fill
-                            className="object-cover object-[center_88%] md:object-[center_72%] md:object-[center_85%]"
+                            className="object-cover object-[center_78%] md:object-[center_72%] md:object-[center_85%]"
                             placeholder="blur"
                             blurDataURL="/placeholder.svg"
                           />

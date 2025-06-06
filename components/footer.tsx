@@ -77,7 +77,7 @@ export function Footer() {
               <FaBuilding className="text-sm text-primary" />
               Entreprise
             </h3>
-            <div className="w-[16px] md:w-[24px] h-[2px] w-full bg-white mb-6 sm:mb-10" />
+            <div className="hidden md:block md:w-[24px] h-[2px] w-full bg-white mb-6 sm:mb-10" />
             <ul className="w-max space-y-1">
               <li>
                 <Link
@@ -134,7 +134,7 @@ export function Footer() {
               <FaGavel className="text-sm text-primary" />
               Légal
             </h3>
-            <div className="w-[16px] md:w-[24px] h-[2px] w-full bg-white mb-6 sm:mb-10" />
+            <div className="hidden md:block md:w-[24px] h-[2px] w-full bg-white mb-6 sm:mb-10" />
             <ul className="space-y-1">
               <li>
                 <Link
@@ -191,7 +191,7 @@ export function Footer() {
               <FaHeadset className="text-sm text-primary" />
               Support
             </h3>
-            <div className="w-[16px] md:w-[24px] h-[2px] w-full bg-black mb-6 sm:mb-10" />
+            <div className="hidden md:block md:w-[24px] h-[2px] w-full bg-black mb-6 sm:mb-10" />
             <ul className="space-y-1">
               <li>
                 <Link
