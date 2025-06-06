@@ -10,7 +10,7 @@ import {
 
 import Link from "next/link";
 
-export function FooterContent() {
+export default function Footer() {
   return (
     <footer className="bg-black text-white ">
       <div className=" 2xl:max-w-[83.5%] mx-auto flex flex-col-reverse sm:flex-col xl:flex-row justify-center border-t border-b border-black">
