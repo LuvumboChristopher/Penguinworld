@@ -62,7 +62,6 @@ export function ContentSection() {
         style={{ backgroundImage: "url('/images/promovols-placeholder.jpg')" }}
       />
       <div className="absolute inset-0 bg-black opacity-35" />
-
       <motion.div
         variants={containerVariants}
         initial="hidden"
@@ -102,7 +101,6 @@ export function ContentSection() {
               </blockquote>
             </div>
           </motion.div>
-
           <div className="h-full flex flex-col justify-between gap-4 lg:gap-6">
             <motion.div
               variants={itemVariants}
@@ -125,7 +123,6 @@ export function ContentSection() {
                 }}
               />
             </motion.div>
-
             <motion.div
               variants={itemVariants}
               animate={{ scale: activeIndex === 1 ? 1.01 : 1, opacity: 1 }}
@@ -147,7 +144,6 @@ export function ContentSection() {
                 }}
               />
             </motion.div>
-
             <motion.div
               variants={itemVariants}
               animate={{ scale: activeIndex === 2 ? 1.01 : 1, opacity: 1 }}

@@ -37,7 +37,6 @@ export function IntroSection() {
               Derrière chaque destination, une intention : rassembler, relier, inspirer.
             </motion.p>
           </div>
-
           <div className="space-y-6">
             <p className="font-light text-sm md:text-base text-justify-optimized">
               Le groupe PenguinWorld et sa large palette de services mise à disposition des professionnels et des voyageurs, se situe au cœur de cette réalité, nous en avons fait notre ADN, notre mission première, et celle de toutes nos équipes d&apos;experts disponibles et passionnés qui contribuent à diffuser ce souffle de concorde et paix à travers le monde.
@@ -52,8 +51,6 @@ export function IntroSection() {
               N&apos;hésitez jamais à partir loin, au delà de toutes les mers, toutes les frontières, tous les pays, toutes les croyances.
             </p>
           </div>
-
-
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -67,7 +64,6 @@ export function IntroSection() {
             </blockquote>
           </motion.div>
         </motion.div>
-
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -75,7 +71,6 @@ export function IntroSection() {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="relative border-b border-white w-full h-[205px]  lg:h-[825px] xl:h-[735px] lg:w-[45%] overflow-hidden lg:border-b-0 lg:border-l-2 lg:border-r-2 lg:border-black cursor-pointer duration-300"
         >
-
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
